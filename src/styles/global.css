@@ -97,4 +97,6 @@ p {
 
 
  
- 
+ #section-about-me #img-icon {
+    transform: scaleX(-1);
+ }
