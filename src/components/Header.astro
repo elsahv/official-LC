@@ -1,32 +1,36 @@
 ---
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { MdOutlineEmail } from "react-icons/md";
+const items = [
+  {
+    icon: "about",
+    link: "/#about",
+  },
+  {
+    icon: "web development",
+    link: "/#portfolio ",
+  },
+
+  {
+    icon: "contact",
+    link: "/#contact ",
+  },
+];
 ---
 
 <header class="bg-">
-  <div id="logo" class="2xl:text-9xl lg:text-8xl text-7xl pb-1 opacity-90">
+  <div id="logo" class="2xl:text-9xl lg:text-8xl text-7xl pb-1 opacity-95">
     <a href="/"> Laughing <br /> Coyote</a>
   </div>
 
-  <div
-    id="icons-container"
-    class="border-t border-b border-black py-1 mt-2 ml-1 w-[110px]"
-  >
-    <div class="flex space-x-2 text-2xl pt- pl-2 opacity-90">
-      <div class="opacity-100">
-        <a href="/#contact">
-          <MdOutlineEmail />
-        </a>
-      </div>
-      <div class="opacity-90">
-        <a href="https://github.com/elsahv">
-          <FaGithub />
-        </a>
-      </div>
-      <div class="opacity-80">
-        <a href="https://linkedin.com/in/elsa-hovey">
-          <FaLinkedinIn />
-        </a>
+  <div id="nav-items" class="py-1 mt-2 ml-1">
+    <div class="pl-2 opacity-90 text- flex justify-left">
+      <div class="border-t border-b border-carribean flex flex-col py-2">
+        {
+          items.map((item) => (
+            <div class="flex items-center space-x-2 text-3xl ml-1">
+              <a href={item.link}>{item.icon}</a>
+            </div>
+          ))
+        }
       </div>
     </div>
   </div>

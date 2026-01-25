@@ -1,7 +1,7 @@
 
 
 html {
-  background-color: #f1f5f9;
+  background-color: #f0ead2;
   font-family: sans-serif;
   scroll-behavior: smooth;
   
@@ -37,12 +37,12 @@ p {
   
 
 /* MOBLE SIZE ABOUT ME FONT */
-#section-about-me #dynamic-title {
+#about #dynamic-title {
   font-size: 30px;
 }
 
 @media screen and (max-width: 900px) {
-#section-about-me #dynamic-title {
+#about #dynamic-title {
   font-size: 20px;
 }
 }
@@ -97,6 +97,11 @@ p {
 
 
  
- #section-about-me #img-icon {
+ #about #img-icon {
     transform: scaleX(-1);
+ }
+
+
+
+ #about #img-icon {
  }
