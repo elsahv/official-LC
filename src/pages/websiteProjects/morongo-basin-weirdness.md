@@ -2,8 +2,8 @@
 id: 1
 layout: ../../layouts/MarkdownPostLayout.astro
 # layout: ../test.astro
-no: "01."
-title: "Laughing Coyote Dev"
+no: "02"
+title: "Morongo Basin Weirdness"
 pubDate: 2022-07-01
 testItem1: "For small businesses with a desire to reach new customers online and grow their business ...web designing for artists and creative. A web design subscription service for small business owners and creatives- focuses on landing pages and user stories."
 image:

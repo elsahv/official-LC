@@ -3,7 +3,7 @@ id: 1
 layout: ../../layouts/MarkdownPostLayout.astro
 # layout: ../test.astro
 no: "03. "
-title: "Writing to Better Health"
+title: "Palm Springs Modernism Styles"
 pubDate: 2022-07-01
 # testItem1: "illustrative mindmaps (with photos) about cooking for neurodivergents, incorporate nutrition"
 testItem1: "a neurodivergent way to study for CDM, a easier way to study and make the world a healthier place"

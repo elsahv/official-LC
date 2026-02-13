@@ -2,8 +2,8 @@
 id: 1
 layout: ../../layouts/MarkdownPostLayout.astro
 # layout: ../test.astro
-no: "02."
-title: "The Running Quail"
+no: "03."
+title: "Out of this world!"
 pubDate: 2022-07-01
 testItem1: "A place where Morongo basin artists and small businesses can tell their story"
 image:

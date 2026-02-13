@@ -12,26 +12,32 @@ import TableContents from "../components/sections/TableContents.astro";
 
 <MainLayout>
   <div id="homepage-wrapper" class="">
+    <!-- EXPLAIN  -->
     <LeftPanel />
+
+    <!-- SHOWS OF VARIOUS STYLES -->
     <div
       id="RIGHT-PANEL"
-      class="text-carribean medium 2xl:h-screen h-full md:absolute relative right-0 md:w-3/5 w-full md:overflow-y-scroll overflow-x-hidden"
+      class="bg- medium 2xl:h-screen h-full md:absolute relative right-0 md:w-3/5 w-full md:overflow-y-scroll overflow-x-hidden"
     >
       <div id="right-panel-wrapper" class="border-l-2 border-r-2 border-black">
         <div id="right-panel-container" class="bg rounded-bl mr-2 md:p-5">
           <div id="myWebsites" class="p-5">
             <div id="CONTAINER" class="p-5 opacity-65 mt-[75px]">
               <div class="pb-2 mt-5">
-                <h1 class="text-4xl">Select Template Projects</h1>
+                <h1 class="text-4xl text-gray-700">explore select templates</h1>
                 <p>
-                  A collection built by weaving stories, software-development,
-                  and web-design together.
+                  websites inspired by desert colors, and palm springs modernism
+                  styles... from someone who's lived the desert life for a near
+                  decade!
                 </p>
               </div>
             </div>
+
+            <!-- WHAT ALL BUILDS OFFER: about, services, contact, what every small business needs in  a site vvvv -->
             <div
               id="grid"
-              class="bg- pl-1 pr-3 grid 2xl:grid-cols-2 gap-5 my- bg-"
+              class="bg- mx-5 px-5 grid 2xl:grid-cols-2 gap-5 my- bg-"
             >
               {
                 myWebsites.map((work) => (
@@ -47,6 +53,7 @@ import TableContents from "../components/sections/TableContents.astro";
                 ))
               }
             </div>
+            <!-- WHAT ALL BUILDS ALSO CAN OFFER, ELABORATE ON THINGS vvvv -->
             <TableContents />
           </div>
           <div id="expand-on-my-websites-wrapper" class="bg- pb-5 px-5 mx-5">

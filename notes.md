@@ -1,3 +1,8 @@
+    attentionParagraph="🖥️ Full Stack Web Developer & Designer"
+    interestParagraph="Need a website that works for your business? Something quick and easy to manage? Or hands off? I develop interesting stories and beautiful, quick websites! I've done all the over thinking with building sites... so you don't have to!  Save yourself from a tech headache and work with me!"
+    desireParagraph=" Hi there, I'm Elsa. I work with small businesses and creatives who need a  website that’s easy to manage, loads fast, and actually converts visitors into customers. I focus on clean design, accessibility, and performance—using modern tools like Astro and React—so your site stays simple, fast, and future-proof."
+    actionParagraph="<-- You can see my work through Laughing Coyote Dev, or Running Quail. If you like what you see, let's chat! -->"
+
 USE ✓!!
 
 ABOUT ME CONTENT
