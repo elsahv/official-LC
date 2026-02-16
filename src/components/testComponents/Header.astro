@@ -1,0 +1,46 @@
+---
+import Image from "astro/components/Image.astro";
+import RQLogo from "../images/RQ.png";
+---
+
+<header class="bg- dropshadow-2xl text-teal 2xl:pb-3 pb-[30px]">
+  <div
+    class="bg- 2xl:mx-5 md:mx-2 mx-0 2xl:px-5 md:px-3 px-0 pt-1 grid md:grid-cols-3 grid-cols-1"
+  >
+    <div
+      id="header-logo"
+      class="bg- 2xl:text-2xl md:text-4xl text-2xl flex justify-start 2xl:pl-1 md:pl-4 pl-0"
+    >
+      <a id="" href="/">
+        <Image src={RQLogo} alt="" class="w-3/4 md:mt-4 mt-0 bg-" />
+      </a>
+    </div>
+    <nav id="" class="md:col-span-2 col-span-1">
+      <ul
+        class="bg- h-[100%] flex md:flex-row flex-col lg:space-x-[35px] md:space-x-5 space-x-0 md:justify-end justify-start md:items-end 2xl:pb-0 pb-2 md:pl-0 pl-2 md:pt-0 mt-3"
+      >
+        <li class="px-1 text-xl opacity-90 hover:opacity-100 drop-shadow-2xl">
+          <a class="" href="/about">About </a>
+        </li>
+        <li class="px-1 text-xl opacity-90 hover:opacity-100 drop-shadow-2xl">
+          <a class="" href="/web-development"> Web Development </a>
+        </li>
+
+        <li class="px-1 text-xl opacity-90 hover:opacity-100 drop-shadow-2xl">
+          <a class="" href="/writing"> Writing</a>
+        </li>
+
+        <li
+          class="mt-2 md:px-1 text-xl opacity-90 hover:opacity-100 drop-shadow-2xl"
+        >
+          <a
+            class="bg-teal text-parchment border border-onyx hover:bg-parchment hover:text-teal hover:border hover:border-teal rounded px-2 pb-1 mb-5"
+            href="/contact"
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

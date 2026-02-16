@@ -1,0 +1,228 @@
+---
+// import FourImgBanner from "../FourImgBanner.astro";
+import CTA from "../shared/CTA.astro";
+
+export interface Props {
+  img1: string;
+  img2: string;
+  img3: string;
+  img4: string;
+  img5: string;
+  img6: string;
+  img7: string;
+  img8: string;
+  img9: string;
+  img10: string;
+  img11: string;
+  img12: string;
+  img13: string;
+  img14: string;
+  img15: string;
+  img16: string;
+}
+
+const {
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
+  img9,
+  img10,
+  img11,
+  img12,
+  img13,
+  img14,
+  img15,
+  img16,
+} = Astro.props as Props;
+---
+
+<div class="">
+  <div id="1st-half" class="bg-">
+    <div class="0">
+      <div class="pt-1 mx-1 bg-">
+        <!-- v -->
+
+        <div class="bg- pt-1 mx-1 bg-">
+          <div
+            id="4-gallery-grid"
+            class="2xl grid md:grid-cols-4 grid-cols-2 gap-4 py-4"
+          >
+            <img
+              src={img1}
+              alt=""
+              class="bg-teal sq-styles-teal w-full 2xl:h-[300px] h-[230px]"
+            />
+            <img
+              src={img2}
+              alt=""
+              class="bg-teal sq-styles-teal w-full 2xl:h-[300px] h-[230px]"
+            />
+            <img
+              src={img3}
+              alt=""
+              class="bg-teal sq-styles-teal w-full 2xl:h-[300px] h-[230px]"
+            />
+            <img
+              src={img4}
+              alt=""
+              class="bg-teal sq-styles-teal w-full 2xl:h-[300px] h-[230px]"
+            />
+          </div>
+        </div>
+
+        <!-- ^ -->
+      </div>
+      <!--! content-section1 v-->
+      <div id="flex" class="bg grid md:grid-cols-4 grid-cols-1">
+        <div id="coral" class="bg- md:col-span-3 col-span-2">
+          <div id="about-cta" class="bg flex justify-center 2xl:mt-[150px]">
+            <div
+              id="about-cta-container"
+              class="bg- 2xl:w-3/4 col-span-2 2xl:mr-0 mr-[35px] 2xl:pt-5 xl:px-5 p-5 2xl:mt-[55px] space-y-8"
+            >
+              <CTA
+                title="This is the new about-(ME) page call-to-action."
+                paragraph1="expand on about pg"
+                link="/about"
+                paragraph2="I provide web design services focused on landing pages, and content creation for small business brand! I create focus-friendly, inclusive websites that elevate your brand and support the work that truly excites you."
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          id=""
+          class="bg- flex md:flex-col flex-row px-2 lg:space-y-5 lg:gap-0 gap-4"
+        >
+          <img
+            src={img5}
+            alt=""
+            class="bg-teal sq-styles-teal w-full 2xl:h-[300px] h-[230px]"
+          />
+          <img
+            src={img6}
+            alt=""
+            class="bg-teal sq-styles-teal w-full 2xl:h-[300px] h-[230px]"
+          />
+        </div>
+      </div>
+      <!-- ! ^^^^^^ ^-->
+    </div>
+  </div>
+  <div id="section4- WHATS INCLUDED" class="">
+    <div id="CSS-TEAL-TRANSITION" class="bg-">
+      <div class="w-full bg- md:absolute relative">
+        <div class="pt-1 mx-1 bg-">
+          <div
+            id="4-gallery-grid"
+            class="2xl grid md:grid-cols-4 grid-cols-2 gap-4 py-4"
+          >
+            <img
+              src={img7}
+              alt=""
+              class="bg-teal sq-styles w-full 2xl:h-[300px] h-[230px]"
+            />
+            <img
+              src={img8}
+              alt=""
+              class="bg-teal sq-styles w-full 2xl:h-[300px] h-[230px]"
+            />
+            <img
+              src={img9}
+              alt=""
+              class="bg-teal sq-styles w-full 2xl:h-[300px] h-[230px]"
+            />
+            <img
+              src={img10}
+              alt=""
+              class="bg-teal sq-styles w-full 2xl:h-[300px] h-[230px]"
+            />
+          </div>
+        </div>
+      </div>
+      <div id="skewed-transition" class="skewed-wrapper">
+        <div class="skewed-bg"></div>
+        <div class="content"></div>
+      </div>
+    </div>
+
+    <!-- !content-section2 v-->
+    <div id="2nd-half teal-background" class="bg-teal">
+      <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+      <div id="teal-background" class="w- text-parchment">
+        <div id="packages-section" class="grid md:grid-cols-3 grid-cols-1">
+          <div
+            id=""
+            class="bg- flex md:flex-col flex-row pr-4 mt-3 lg:space-y-5 lg:gap-0 gap-4"
+          >
+            <img
+              src={img11}
+              alt=""
+              class="sq-styles 2xl:w-[470px] xl:w-[250px] w-[200px] 2xl:h-[320px] xl:h-[240px]"
+            />
+            <img
+              src={img12}
+              alt=""
+              class="sq-styles 2xl:w-[470px] xl:w-[250px] w-[200px] 2xl:h-[320px] xl:h-[240px]"
+            />
+          </div>
+          <div
+            id="content-container"
+            class="bg- 2xl:w-3/4 col-span-2 2xl:mr-0 mr-[35px] 2xl:pt-5 xl:px-5 p-5 2xl:mt-[55px] space-y-8"
+          >
+            <CTA
+              title="This is the new web-dev pg call-to-action."
+              paragraph1="expand on web dev pg"
+              link="/web-development"
+              paragraph2="web dev-test  I create focus-friendly, inclusive websites that elevate your brand and support the work that truly excites you."
+            />
+          </div>
+
+          <div id="css-teal-transition" class="bg-">
+            <div class="w-full md:absolute relative">
+              <div class="bg- pt-1 mx-1 bg-">
+                <div
+                  id="4-gallery-grid"
+                  class="bg- 2xl grid md:grid-cols-4 grid-cols-2 gap-4 py-4"
+                >
+                  <img
+                    src={img13}
+                    alt=""
+                    class="bg-teal sq-styles w-full 2xl:h-[300px] h-[230px]"
+                  />
+                  <img
+                    src={img14}
+                    alt=""
+                    class="bg-teal sq-styles w-full 2xl:h-[300px] h-[230px]"
+                  />
+                  <img
+                    src={img15}
+                    alt=""
+                    class="bg-teal sq-styles w-full 2xl:h-[300px] h-[230px]"
+                  />
+                  <img
+                    src={img16}
+                    alt=""
+                    class="bg-teal sq-styles w-full 2xl:h-[300px] h-[230px]"
+                  />
+                </div>
+              </div>
+            </div>
+            <div id="skewed-transition" class="skewed-wrapper">
+              <div class="skewed-bg"></div>
+              <div class="content"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
+    </div>
+    <!-- !^^^^^^ ^-->
+  </div>
+</div>

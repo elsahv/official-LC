@@ -2,7 +2,7 @@
 id: 1
 layout: ../../layouts/MarkdownPostLayout.astro
 # layout: ../test.astro
-no: "01"
+no: "01-rq"
 title: "Desert color inspirations"
 pubDate: 2022-07-01
 testItem1: "an illustrative blog about cooking and nutrition for neurodivergents TIE IN HORROR STORY? HORROR STORY IDEA: TIES IN NUTRITION WITH EVER INCREASING WEEKLY DEATHS, AND ATTENTION DEFICITS"

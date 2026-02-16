@@ -1,40 +1,13 @@
 ---
-const items = [
-  {
-    icon: "about",
-    link: "/#about",
-  },
-  {
-    icon: "templates",
-    link: "/#portfolio ",
-  },
-
-  {
-    icon: "contact",
-    link: "/#contact ",
-  },
-];
+import NavItems from "./NavItems.astro";
 ---
 
 <header class="bg-">
   <div
     id="logo"
-    class="text-onyx 2xl:text-9xl lg:text-8xl text-7xl pb-1 opacity"
+    class="text- 2xl:text-9xl lg:text-8xl text-7xl pb-1 opacity-90"
   >
     <a href="/"> Laughing <br /> Coyote</a>
   </div>
-
-  <div id="nav-items" class="py-1 mt-2 ml-1">
-    <div class="pl-2 opacity-90 text- flex justify-left">
-      <div class="border-t border-b border-carribean flex flex-col py-2">
-        {
-          items.map((item) => (
-            <div class="flex items-center space-x-2 text-2xl ml-1">
-              <a href={item.link}>{item.icon}</a>
-            </div>
-          ))
-        }
-      </div>
-    </div>
-  </div>
+  <NavItems />
 </header>

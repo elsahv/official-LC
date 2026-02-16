@@ -1,0 +1,31 @@
+---
+const items = [
+  {
+    icon: "about",
+    link: "/#about",
+  },
+  {
+    icon: "templates",
+    link: "/#portfolio ",
+  },
+
+  {
+    icon: "contact",
+    link: "/#contact ",
+  },
+];
+---
+
+<nav id="nav-items" class="py-1 mt-2 ml-1">
+  <div class="pl-2 opacity-90 text- flex justify-left">
+    <div class="border-t border-b border-carribean flex flex-col py-2">
+      {
+        items.map((item) => (
+          <div class="flex items-center space-x-2 text-2xl ml-1">
+            <a href={item.link}>{item.icon}</a>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</nav>
