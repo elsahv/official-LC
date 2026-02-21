@@ -1,7 +1,7 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Contact from "../components/sections/Contact.astro";
-const myWebsites = await Astro.glob("./websiteProjects/*.md");
+const caseStudies = await Astro.glob("./caseStudies/*.md");
 const screenshots = await Astro.glob("./screenshots/*.md");
 import WebsiteCard from "../components/WebsiteCard.astro";
 import ExpandOnWebsitesCard from "../components/ExpandOnWebsitesCard.astro";
@@ -10,7 +10,6 @@ import Footer from "../components/Footer.astro";
 import TableContents from "../components/sections/TableContents.astro";
 ---
 
-<!-- TODO:currently turning into official RQ V-->
 <MainLayout>
   <div id="homepage-wrapper" class="">
     <!-- EXPLAIN  -->
@@ -41,15 +40,15 @@ import TableContents from "../components/sections/TableContents.astro";
               class="bg- mx-5 px-5 grid 2xl:grid-cols-2 gap-5 my- bg-"
             >
               {
-                myWebsites.map((work) => (
+                caseStudies.map((caseStudy) => (
                   <WebsiteCard
-                    no={work.frontmatter.no}
-                    image={work.frontmatter.image.url}
-                    alt={work.frontmatter.image.alt}
-                    url={work.url}
-                    testItem1={work.frontmatter.testItem1}
-                    language={work.frontmatter.language}
-                    backend={work.frontmatter.backend}
+                    no={caseStudy.frontmatter.no}
+                    image={caseStudy.frontmatter.image.url}
+                    alt={caseStudy.frontmatter.image.alt}
+                    url={caseStudy.url}
+                    testItem1={caseStudy.frontmatter.testItem1}
+                    language={caseStudy.frontmatter.language}
+                    backend={caseStudy.frontmatter.backend}
                   />
                 ))
               }

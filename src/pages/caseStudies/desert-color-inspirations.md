@@ -17,13 +17,38 @@ githubUrl: "https://github.com/elsahv/-the-running-quail"
 tags: ["php", "blogging", "learning in wordpress"]
 language: "php"
 backend: "wordpress"
+brandConcept: "Brand concept!!a"
+targetBrand: "targetBrand"
+audience: "audience"
+mood: "mood"
+colorChoices: "colorChoices"
+typographyReasoning: "typographyReasoning"
+designSystem: "designSystem"
+layoutDecisions: "layoutDecisions"
+typographyPairings: "typographyPairings"
+UIComponents: "UIComponents"
+palette: "palette"
+spacingRules: "spacingRules"
+finishedWebsite: ""
+interactions: ""
+mobileVersion: ""
+landingPage: ""
+components: ""
 ---
 
-- WTBH- "an illustrative blog about cooking and nutrition for neurodivergents TIE IN HORROR STORY? HORROR STORY IDEA: TIES IN NUTRITION WITH EVER INCREASING WEEKLY DEATHS, AND ATTENTION DEFICITS"
+<!-- TODO: BUILD OUT CASE STUDY SLUGS, OUTLINE: V-->
 
-<a href="https://writingtobetterhealth.com" target="_blank">
-  <img src="https://i.pinimg.com/1200x/7f/27/c1/7f27c11cd32dee76995a59cef1835403.jpg" alt="Writing to Better Health" class="mb-5 rounded border border-gray-400 my-5" />
-</a>
-<p>ptio asperiores, laborum soluta totam vitae voluptatem? Praesentium dicta ne em ipsum dolor sit amet consectetu</p>
-
-https://www.dropbox.com/scl/fi/ofaszetg60epvok8kpdh0/rq-1-11-23.png?rlkey=8t41ceft4umwmot1nzdt3mnj7&st=mmux5w3p&dl=0
+1. H2- Brand concept, Explain:
+   h3- target brand,
+   inspiration,
+   audience,
+   mood,
+   color choices,
+   typography reasoning 2. h2-Design system
+   h3- show:
+   layout decisions,
+   typography pairings,
+   UI components,
+   palette,
+   spacing rules 3. h2- Finished website
+   h3- interactions, mobile version, landing page,components

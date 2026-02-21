@@ -7,10 +7,10 @@ const { frontmatter } = Astro.props;
 ---
 
 <MainLayout>
-  <div class="w-1/2">
+  <div class="bg-test1">
     <LeftPanel />
   </div>
-  <div id="markdown-post" class="text-lg 2xl:p-5">
+  <div id="markdown-post" class="bg-papaya text-lg 2xl:p-5">
     <div
       id="right-side-markdown-container"
       class="h-screen md:absolute relative right-0 md:w-3/5 w-full overflow-y-scroll overflow-x-hidden 2xl:p-5 md:p-3"
@@ -40,7 +40,34 @@ const { frontmatter } = Astro.props;
             </div>
           </div>
           <div id="website-content" class="pl-3 pr-5 mr-5 dropshadow-3xl bg-">
-            <div class="bg- my-5 py-5 pt-2 opacity-80 text-lg">
+            <div id="brand-concept" class="">
+              <h2>{frontmatter.brandConcept}</h2>
+              <h3>{frontmatter.targetBrand}</h3>
+              <h3>{frontmatter.inspiration}</h3>
+              <h3>{frontmatter.audience}</h3>
+              <h3>{frontmatter.mood}</h3>
+              <h3>{frontmatter.colorChoices}</h3>
+              <h3>{frontmatter.typographyReasoning}</h3>
+            </div>
+
+            <div id="design-system" class="">
+              <h2>{frontmatter.designSystem}</h2>
+              <h3>{frontmatter.layoutDecisions}</h3>
+              <h3>{frontmatter.typographyPairings}</h3>
+              <h3>{frontmatter.UIComponents}</h3>
+              <h3>{frontmatter.palette}</h3>
+              <h3>{frontmatter.spacingRules}</h3>
+            </div>
+
+            <div id="finished-website">
+              <h2>{frontmatter.finishedWebsite}</h2>
+              <h3>{frontmatter.interactions}</h3>
+              <h3>{frontmatter.mobileVersion}</h3>
+              <h3>{frontmatter.landingPage}</h3>
+              <h3>{frontmatter.components}</h3>
+            </div>
+
+            <div class="my-5 py-5 pt-2 opacity-80 text-lg">
               <div class="py-5 mt-5 bg-">
                 <slot />
               </div>

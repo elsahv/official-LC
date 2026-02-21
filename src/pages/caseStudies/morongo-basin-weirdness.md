@@ -17,6 +17,22 @@ githubUrl: "https://github.com/elsahv/-the-runniwng-quail"
 tags: ["astro", "blogging", "learning in public"]
 language: "IP-THIS IS WHERE I TALK ABOUT HOW LC USES TEreact"
 backend: "full-stack"
+brandConcept: "Brand concept!!a"
+targetBrand: "targetBrand"
+audience: "audience"
+mood: "mood"
+colorChoices: "colorChoices"
+designSystem: "designSystem"
+layoutDecisions: "layoutDecisions"
+typographyPairings: "typographyPairings"
+UIComponents: "UIComponents"
+palette: "palette"
+spacingRules: "spacingRules"
+finishedWebsite: ""
+interactions: ""
+mobileVersion: "test"
+landingPage: ""
+components: ""
 ---
 
 <div class="flex space-x-72 mt-[50px]">

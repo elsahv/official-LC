@@ -19,6 +19,7 @@ export default {
         onyx: "#313638",
         aquamarine: "#7FFFD4",
         parchment: "#f0ead2",
+        papaya: "#FFECD1",
         rosyBrown: "#B18D9B",
         test1: "#f88379",
         test2: "lightgreen",
