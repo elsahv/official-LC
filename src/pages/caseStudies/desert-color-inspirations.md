@@ -15,8 +15,18 @@ secondImage:
 websiteUrl: "https://therunningquail.com"
 githubUrl: "https://github.com/elsahv/-the-running-quail"
 tags: ["php", "blogging", "learning in wordpress"]
-language: "php"
+# language: "php"
 backend: "wordpress"
+client: "Writing to Better Health"
+# CONTENT BELOW ABOUT CLIENT V
+elaborateTheme: "sandy undertones"
+problem: "tesdfdsft"
+my approach: "test"
+Strategies Employed: "test"
+Results: "test"
+Next Steps: "test"
+Conclusion: "test"
+
 brandConcept: "Brand concept!!a"
 targetBrand: "targetBrand"
 audience: "audience"
@@ -35,20 +45,3 @@ mobileVersion: ""
 landingPage: ""
 components: ""
 ---
-
-<!-- TODO: BUILD OUT CASE STUDY SLUGS, OUTLINE: V-->
-
-1. H2- Brand concept, Explain:
-   h3- target brand,
-   inspiration,
-   audience,
-   mood,
-   color choices,
-   typography reasoning 2. h2-Design system
-   h3- show:
-   layout decisions,
-   typography pairings,
-   UI components,
-   palette,
-   spacing rules 3. h2- Finished website
-   h3- interactions, mobile version, landing page,components

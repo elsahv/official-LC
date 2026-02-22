@@ -40,32 +40,46 @@ const { frontmatter } = Astro.props;
             </div>
           </div>
           <div id="website-content" class="pl-3 pr-5 mr-5 dropshadow-3xl bg-">
-            <div id="brand-concept" class="">
-              <h2>{frontmatter.brandConcept}</h2>
-              <h3>{frontmatter.targetBrand}</h3>
-              <h3>{frontmatter.inspiration}</h3>
-              <h3>{frontmatter.audience}</h3>
-              <h3>{frontmatter.mood}</h3>
-              <h3>{frontmatter.colorChoices}</h3>
-              <h3>{frontmatter.typographyReasoning}</h3>
-            </div>
+            <div id="elaborate-theme">
+              <h1 class="font-bold">
+                Elaborate on Theme:{frontmatter.elaborateTheme}
+              </h1>
+              <ul id="brand-concept">
+                <li>{frontmatter.brandConcept}</li>
+                <li>{frontmatter.targetBrand}</li>
+                <li>{frontmatter.inspiration}</li>
+                <li>{frontmatter.audience}</li>
+                <li>{frontmatter.mood}</li>
+                <li>{frontmatter.colorChoices}</li>
+                <li>{frontmatter.typographyReasoning}</li>
+              </ul>
 
-            <div id="design-system" class="">
-              <h2>{frontmatter.designSystem}</h2>
-              <h3>{frontmatter.layoutDecisions}</h3>
-              <h3>{frontmatter.typographyPairings}</h3>
-              <h3>{frontmatter.UIComponents}</h3>
-              <h3>{frontmatter.palette}</h3>
-              <h3>{frontmatter.spacingRules}</h3>
+              <ul id="design-system" class="">
+                <li>{frontmatter.designSystem}</li>
+                <li>{frontmatter.layoutDecisions}</li>
+                <li>{frontmatter.typographyPairings}</li>
+                <li>{frontmatter.UIComponents}</li>
+                <li>{frontmatter.palette}</li>
+                <li>{frontmatter.spacingRules}</li>
+              </ul>
             </div>
+            <h2 class="font-bold">client: {frontmatter.client}</h2>
+            <h2 class="font-bold">problem:{frontmatter.problem}</h2>
+            <h2 class="font-bold">my approach:{frontmatter.myApproach}</h2>
+            <h2 class="font-bold">
+              Strategies Employed:{frontmatter.strategiesEmployed}
+            </h2>
+            <h2 class="font-bold">Results:{frontmatter.results}</h2>
+            <h2 class="font-bold">Next Steps:{frontmatter.nextSteps}</h2>
+            <h2 class="font-bold">Conclusion:{frontmatter.conclusion}</h2>
 
-            <div id="finished-website">
-              <h2>{frontmatter.finishedWebsite}</h2>
-              <h3>{frontmatter.interactions}</h3>
-              <h3>{frontmatter.mobileVersion}</h3>
-              <h3>{frontmatter.landingPage}</h3>
-              <h3>{frontmatter.components}</h3>
-            </div>
+            <ul id="finished-website">
+              <li>{frontmatter.finishedWebsite}</li>
+              <li>{frontmatter.interactions}</li>
+              <li>{frontmatter.mobileVersion}</li>
+              <li>{frontmatter.landingPage}</li>
+              <li>{frontmatter.components}</li>
+            </ul>
 
             <div class="my-5 py-5 pt-2 opacity-80 text-lg">
               <div class="py-5 mt-5 bg-">
