@@ -25,6 +25,8 @@ export default {
         test2: "lightgreen",
         aliceBlue: "#f1f5f9",
         orange: "#FF7F50",
+        xanthous: "#FFBA49",
+        lightSeaGreen:"#20A39E",
       },
     },
   },

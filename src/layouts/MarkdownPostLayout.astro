@@ -6,14 +6,27 @@ import MainLayout from "./MainLayout.astro";
 const { frontmatter } = Astro.props;
 ---
 
+<!-- 
+- SLUGS: (see markdown)
+  -h1-1.brand concept: all these show strategic thinking... ex: “Boutique desert wellness retreat brand inspired by mid-century resort design.”
+
+-h1-2.design systems:
+
+-h1-3.finished site:
+
+- "ON BUILDING A STYLE SERIES":
+  -Make sure every choice has reasoning:
+  why those colors? spacing? layout? what business it serves?
+
+  -GOAL: stand out- Instead of one site, create multiple themed designs: -->
 <MainLayout>
   <div class="bg-test1">
     <LeftPanel />
   </div>
-  <div id="markdown-post" class="bg-papaya text-lg 2xl:p-5">
+  <div id="markdown-post" class="text-lg">
     <div
       id="right-side-markdown-container"
-      class="h-screen md:absolute relative right-0 md:w-3/5 w-full overflow-y-scroll overflow-x-hidden 2xl:p-5 md:p-3"
+      class="bg-papaya text-[#5d2a42] h-screen md:absolute relative right-0 md:w-3/5 w-full overflow-y-scroll overflow-x-hidden 2xl:p-5 md:p-3"
     >
       <section class="bg- md:mx-5 mx-5 p-5">
         <div class="p-5 mr -5">
@@ -39,7 +52,7 @@ const { frontmatter } = Astro.props;
               </div>
             </div>
           </div>
-          <div id="website-content" class="pl-3 pr-5 mr-5 dropshadow-3xl bg-">
+          <div id="website-content" class="pl-3 pr-5 mr-5 dropshadow-3xl mt-3">
             <div id="elaborate-theme">
               <h1 class="font-bold">
                 Elaborate on Theme:{frontmatter.elaborateTheme}

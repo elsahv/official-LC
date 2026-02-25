@@ -1,7 +1,6 @@
 
 
 html {
-  background-color: #f1f5f9;
   font-family: sans-serif;
   scroll-behavior: smooth;
   
@@ -58,7 +57,6 @@ p {
 /* //* FOR SKILLS ICON ----v*/
 .skills-sq {
   border: 1px solid #B18D9B;
-  background: #f9f9f9 ;
   text-align: center;
   border-radius: 10px;
   
@@ -101,7 +99,10 @@ p {
     transform: scaleX(-1);
  }
 
+ 
 
 
- #about #img-icon {
+ .sq-styles {
+  border: 1px solid black;
+  border-radius: 15px;
  }
