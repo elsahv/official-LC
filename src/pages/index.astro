@@ -3,7 +3,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Contact from "../components/sections/Contact.astro";
 const caseStudies = await Astro.glob("./caseStudies/*.md");
 const screenshots = await Astro.glob("./screenshots/*.md");
-import WebsiteCard from "../components/WebsiteCard.astro";
+import CaseStudyCard from "../components/CaseStudyCard.astro";
 import ExpandOnWebsitesCard from "../components/ExpandOnWebsitesCard.astro";
 import LeftPanel from "../layouts/LeftPanel.astro";
 import Footer from "../components/Footer.astro";
@@ -22,8 +22,8 @@ import TableContents from "../components/sections/TableContents.astro";
     >
       <div id="right-panel-wrapper" class="border-l-2 border border-gray-500">
         <div id="right-panel-container" class="bg rounded-bl mr-2 md:p-5">
-          <div id="myWebsites" class="p-5">
-            <div id="CONTAINER" class="p-5 opacity-65 mt-[75px]">
+          <div id="" class="p-5">
+            <div id="intro-section" class="p-5 opacity-65 mt-[75px]">
               <div class="pb-2 mt-5">
                 <h1 class="text-4xl">explore case studies</h1>
                 <p>
@@ -36,12 +36,12 @@ import TableContents from "../components/sections/TableContents.astro";
 
             <!-- WHAT ALL BUILDS OFFER: about, services, contact, what every small business needs in  a site vvvv -->
             <div
-              id="grid"
+              id="case-studies-grid"
               class="bg- mx-5 px-5 grid 2xl:grid-cols-2 gap-5 my- bg-"
             >
               {
                 caseStudies.map((caseStudy) => (
-                  <WebsiteCard
+                  <CaseStudyCard
                     no={caseStudy.frontmatter.no}
                     image={caseStudy.frontmatter.image.url}
                     alt={caseStudy.frontmatter.image.alt}
