@@ -1,0 +1,27 @@
+---
+import DynamicAbout from "../DynamicAbout.astro";
+---
+
+<section id="About" class="">
+  <h2>About</h2>
+
+  <!-- TODO: COMBINE 4 case studies INTO ABOUT -->
+  <section id="4 case studies" class="bg- xl:mr-2 pr-1 mt-[150px] pt-5 bg-">
+    <DynamicAbout
+      mainImg="https://dl.dropboxusercontent.com/scl/fi/xzfhk2jletg2hqwc9ecks/coyote.png?rlkey=xtfjf7plvgb8y3fjxdij0vdt5&st=run4yzui&dl=0"
+      title="Four Case Studies"
+      paragraph1="what do all these have in common? "
+      paragraph2="for why?"
+    />
+  </section>
+
+  <!-- TODO: COMBINE self about INTO ABOUT -->
+  <section id="about-self" class="bg- xl:mr-2 pr-1 mt-[150px] pt-5 bg-">
+    <DynamicAbout
+      mainImg=""
+      title="Different types of styles"
+      paragraph1=" I'm not just a coder who designs — I'm a designer who builds."
+      paragraph2=" -I want to use this idea towards my portfolio to show off diverse styles."
+    />
+  </section>
+</section>

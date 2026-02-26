@@ -10,7 +10,55 @@
 // import SubjectsBanner from "../components/testComponents/SubjectsBanner.astro";
 ---
 
-<!-- <Hero /> --><!--  TODO:  BACK BUILD AUTHORITY --><!-- TODO: ADDRESS KEY PROBLEM --><!-- TODO: AIDA CONTENT v --><!-- *LATEST POSTS --><!-- TODO: How it Works(THE PROCESS) V--><!-- TODO: SOCIAL PROOF V--><!-- TODO: WHATS INCLUDED CTA V--><!-- TODO: PRICING/ PKGS CTA V--><!-- TODO: new CONTACT cta, IS THIS FOR ME? FAQ v--><!-- TODO: new CONTACT cta, IS THIS FOR ME? FAQ ^--><!-- ?CONTENT TO CONSIDER V--><!-- 🔧 How to Use Astro + React in Your Service
+---
+
+---
+
+export interface Props {
+productDef: string;
+targetAudience: string;
+mainGoal: string;
+audienceMessage: string;
+keyFeatures: string;
+}
+
+const { productDef, targetAudience, mainGoal, audienceMessage, keyFeatures } =
+Astro.props as Props;
+
+<div id="about-lc" class="bg-test1">
+  <h2>About LC</h2>
+  <ul>
+    <li>{productDef}</li>
+    <li>{targetAudience}</li>
+    <li>{mainGoal}</li>
+    <li>{audienceMessage}</li>
+    <li>{keyFeatures}</li>
+  </ul>
+</div>
+<AboutConcept
+           productDef="Jungle-What is the product, service, or idea you're promoting?"
+          targetAudience="Who is your target audience?"
+          mainGoal=" What is the main goal of the campaign? (e.g. brand awareness, sales, community building)"
+          keyFeatures=" Are there any key features, benefits, or values that should be highlighted?"
+          audienceMessage="What feeling or message do you want the audience to take away?"
+        />
+_________________________________________________________________________________________________________________
+
+Content section order:
+HERO-
+BUILD AUTHORITY
+ADDRESS KEY PROBLEM- what problem LC solves-IP
+AIDA CONTENT
+HOW IT WORKS
+WHATS INCLUDED
+SOCIAL PROOF-
+PORTFOLIO
+PACKAGES
+PRICING
+FAQ
+CONTACT
+
+---
 
 A. Component-Based Custom Design
 Build a library of reusable React components (hero sections, pricing tables, contact forms).
