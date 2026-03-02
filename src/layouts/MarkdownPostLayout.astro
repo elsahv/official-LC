@@ -57,45 +57,45 @@ const { frontmatter } = Astro.props;
               <h1 class="font-bold">
                 Elaborate on Theme:{frontmatter.elaborateTheme}
               </h1>
-              <ul id="brand-concept">
-                <li>{frontmatter.brandConcept}</li>
-                <li>{frontmatter.targetBrand}</li>
-                <li>{frontmatter.inspiration}</li>
-                <li>{frontmatter.audience}</li>
-                <li>{frontmatter.mood}</li>
-                <li>{frontmatter.colorChoices}</li>
-                <li>{frontmatter.typographyReasoning}</li>
-              </ul>
+              <section id="brand-concept">
+                <h2 class="font-bold pt-5">1.Brand Concept</h2>
+                <p class="pb-5 mb-5">{frontmatter.brandConcept}</p>
+                <p class="pb-5 mb-5">{frontmatter.targetAudience}</p>
+                <p class="pb-5 mb-5">{frontmatter.layoutDecisions}</p>
+                <p>{frontmatter.typographyReasoning}</p>
+                <p>{frontmatter.mood}</p>
+              </section>
 
-              <ul id="design-system" class="">
-                <li>{frontmatter.designSystem}</li>
-                <li>{frontmatter.layoutDecisions}</li>
-                <li>{frontmatter.typographyPairings}</li>
-                <li>{frontmatter.UIComponents}</li>
-                <li>{frontmatter.palette}</li>
-                <li>{frontmatter.spacingRules}</li>
-              </ul>
+              <section id="design-system" class="my-5">
+                <h2 class="font-bold pt-5">2.Design System</h2>
+                <p class="pb-5 mb-5">{frontmatter.designSystem}</p>
+                <!-- *DONE: WORK ON PALETTE COLORS V-->
+                <div id="palette-colors">
+                  <h2 class="font-bold">{frontmatter.paletteName}</h2>
+                  <img src={frontmatter.paletteScreenshot} alt="" />
+                  <p class="p-2">
+                    {frontmatter.paletteExplanation}
+                  </p>
+                </div>
+                <!-- *DONE: WORK ON PALETTE COLORS ^-->
+              </section>
             </div>
-            <h2 class="font-bold">client: {frontmatter.client}</h2>
-            <h2 class="font-bold">problem:{frontmatter.problem}</h2>
-            <h2 class="font-bold">my approach:{frontmatter.myApproach}</h2>
-            <h2 class="font-bold">
-              Strategies Employed:{frontmatter.strategiesEmployed}
-            </h2>
-            <h2 class="font-bold">Results:{frontmatter.results}</h2>
-            <h2 class="font-bold">Next Steps:{frontmatter.nextSteps}</h2>
-            <h2 class="font-bold">Conclusion:{frontmatter.conclusion}</h2>
 
-            <ul id="finished-website">
-              <li>{frontmatter.finishedWebsite}</li>
-              <li>{frontmatter.interactions}</li>
-              <li>{frontmatter.mobileVersion}</li>
-              <li>{frontmatter.landingPage}</li>
-              <li>{frontmatter.components}</li>
-            </ul>
-
-            <div class="my-5 py-5 pt-2 opacity-80 text-lg">
-              <div class="py-5 mt-5 bg-">
+            <section id="finished-website">
+              <h2 class="font-bold pt-5">3.Finished Website Case Study</h2>
+              <p class="pb-5 mb-5">{frontmatter.finishedWebsite}</p>
+              <p class="font-bold">client: {frontmatter.client}</p>
+              <p class="font-bold">problem:{frontmatter.problem}</p>
+              <p class="font-bold">my approach:{frontmatter.myApproach}</p>
+              <p class="font-bold">
+                Strategies Employed:{frontmatter.strategiesEmployed}
+              </p>
+              <p class="font-bold">Results:{frontmatter.results}</p>
+              <p class="font-bold">Next Steps:{frontmatter.nextSteps}</p>
+              <p class="font-bold">Conclusion:{frontmatter.conclusion}</p>
+            </section>
+            <div class="mt-5 my-5 py-[55px] pt-2 opacity-80 text-lg">
+              <div class="bg-">
                 <slot />
               </div>
               <!-- <Contact /> -->

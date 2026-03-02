@@ -2,10 +2,10 @@
 id: 1
 layout: ../../layouts/MarkdownPostLayout.astro
 # layout: ../test.astro
-no: "01-rq"
+no: "01-roof"
 title: "Desert color inspirations"
 pubDate: 2022-07-01
-testItem1: "an illustrative blog about cooking and nutrition for neurodivergents TIE IN HORROR STORY? HORROR STORY IDEA: TIES IN NUTRITION WITH EVER INCREASING WEEKLY DEATHS, AND ATTENTION DEFICITS"
+testItem1: "This is the Desert Color Inspirations kit. Here's what we have to offer:"
 image:
   url: "https://dl.dropboxusercontent.com/scl/fi/ofaszetg60epvok8kpdh0/rq-1-11-23.png?rlkey=8t41ceft4umwmot1nzdt3mnj7&st=mmux5w3p&dl=0"
   alt: "PHP & wordpress theme projects"
@@ -16,8 +16,8 @@ websiteUrl: "https://therunningquail.com"
 githubUrl: "https://github.com/elsahv/-the-running-quail"
 tags: ["php", "blogging", "learning in wordpress"]
 # language: "php"
-backend: "wordpress"
-client: "Writing to Better Health"
+# backend: "wordpress"
+client: "HoveyRoofing"
 # CONTENT BELOW ABOUT CLIENT V
 elaborateTheme: "sandy undertones"
 problem: "tesdfdsft"
@@ -26,22 +26,27 @@ Strategies Employed: "test"
 Results: "test"
 Next Steps: "test"
 Conclusion: "test"
-
-brandConcept: "Brand concept!!a"
-targetBrand: "targetBrand"
-audience: "audience"
-mood: "mood"
-colorChoices: "colorChoices"
-typographyReasoning: "typographyReasoning"
-designSystem: "designSystem"
+brandConcept: "This is what your brand stands for and the core idea behind it."
+### Now Let’s Talk Strategy (AUDIENCE and MOOD) --v
+targetAudience: "This is who the brand is for.its not a vibe experiment. You’re not designing for aesthetic admiration.You’re designing for: 📞Calls,📝Quote requests, 🛠️Authority🧱Durability. Services needed: - Tile repair Shingle replacement Leak diagnosis & repair"
+mood: "Keep it conservative. Conversion first. But do NOT make it feel like a design studio site."
+# colorChoices: "colorChoices"
+typographyReasoning:
+  "A strong humanist sans (e.g., Montserrat, Inter, or similar)
+  — conveys modern but solid professional feel."
+designSystem: "This is where I explain the design system for desert color inspirations."
 layoutDecisions: "layoutDecisions"
-typographyPairings: "typographyPairings"
-UIComponents: "UIComponents"
-palette: "palette"
-spacingRules: "spacingRules"
-finishedWebsite: ""
-interactions: ""
-mobileVersion: ""
-landingPage: ""
-components: ""
+# typographyPairings: "typographyPairings"
+# UIComponents: "UIComponents"
+paletteName: "Desert Color Inspirations"
+paletteScreenshot: " https://dl.dropboxusercontent.com/scl/fi/lg0arrn0y60ltinj5qikb/roofHex.png?rlkey=dum5vasdzo2lh0lc5bkuuhhun&st=kly61qla&dl=0"
+paletteExplanation: " This is where I talk about palette colors. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem ullam cumque odio, modi omnis dolorem sequi voluptate! Itaque facere, commodi cumque, ipsum alias quos dolorem impedit nostrum, eligendi laboriosam corrupti!"
+
+# spacingRules: "spacingRules"
+finishedWebsite: "Here is a client case study, which I've applied to HoveyRoofing.com"
+# interactions: ""
+# mobileVersion: ""
+# landingPage: ""
+# components: ""
+#sections: "1.Services Overview, 2.Why Choose Us 3.Service Areas 4.Reviews Section  5.Before & After Gallery"
 ---

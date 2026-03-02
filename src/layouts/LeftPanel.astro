@@ -1,11 +1,9 @@
 ---
-import About from "../components/sections/About.astro";
-// import Overview from "../components/sections/Overview.astro";
+import Overview from "../components/sections/Overview.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import WhatsLC from "../components/sections/WhatsLC.astro";
-import HowItWorks from "../components/sections/HowItWorks.astro";
-import WhatsIncluded from "../components/sections/WhatsIncluded.astro";
+import AccordianSection from "../components/testComponents/AccordianSection.astro";
 ---
 
 <div
@@ -17,13 +15,10 @@ import WhatsIncluded from "../components/sections/WhatsIncluded.astro";
     class="bg- py-5 2xl:pl-5 2xl:pr-[30px] pl-1 pr-5 bg- border-r-2 border-black"
   >
     <Header />
-    <div id="" class="2xl:pl-0 pl-2">
-      <!-- *DONE: NEW SECTIONS CONTENT REARRANGE 2/25/26 V-->
+    <div id="" class="">
       <WhatsLC />
-      <HowItWorks />
-      <WhatsIncluded />
-      <About />
-      <!-- <Overview /> -->
+      <AccordianSection />
+      <Overview />
       <!-- EVENTUALLY CONTACT FORM OR CTA -->
     </div>
   </div>

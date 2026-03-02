@@ -1,0 +1,33 @@
+---
+interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+---
+
+<details class="accordion">
+  <summary class="accordion-summary">
+    {title}
+  </summary>
+  <div class="accordion-content">
+    <slot />
+  </div>
+</details>
+
+<style>
+  .accordion {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .accordion-summary {
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .accordion-content {
+    margin-top: 0.75rem;
+  }
+</style>

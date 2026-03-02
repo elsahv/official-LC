@@ -9,20 +9,19 @@ export interface Props {
 const { title, paragraph1, paragraph2, mainImg } = Astro.props as Props;
 ---
 
-<div id="about-me-wrapper" class="bg- my-5 px-3">
+<div id="about-me-wrapper" class="px-3">
   <div id="about-me-container" class="">
-    <div id="img-container" class="bg-">
-      <h2 id="dynamic-title" class="font-semibold">
+    <!-- <div id="img-container" class="bg-"> -->
+    <img src={mainImg} id="img-icon" alt="" width="" class="opacity-85" />
+    <!-- </div> -->
+    <div id="content-wrapper" class="bg-">
+      <h2 id="dynamic-title" class="bg- pb-1 font-semibold">
         {title}
       </h2>
-
-      <div id="img-wrapper" class="">
-        <img src={mainImg} id="img-icon" alt="" width="" class="opacity-85" />
+      <div class="px-1">
+        <p id="about-paragraph2" class="bg-">{paragraph1}</p>
+        <p id="" class="">{paragraph2}</p>
       </div>
-    </div>
-    <div class="py- px-1">
-      <p id="about-paragraph2" class="bg-">-{paragraph1}</p>
-      <p id="" class="">{paragraph2}</p>
     </div>
   </div>
 </div>

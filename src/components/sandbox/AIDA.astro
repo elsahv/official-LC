@@ -1,0 +1,25 @@
+---
+export interface Props {
+  attention: string;
+  interest: string;
+  desire: string;
+  action: string;
+}
+
+const { attention, interest, desire, action } = Astro.props as Props;
+---
+
+<div id="about-me-wrapper" class="px-3 bg-">
+  <div id="about-me-container" class="">
+    <div id="content-wrapper" class="bg-">
+      <h2 id="dynamic-attention" class="bg- pb-1 font-semibold">
+        {attention}
+      </h2>
+      <div class="px-1">
+        <p id="about-interest" class="bg-">{interest}</p>
+        <p id="" class="">{desire}</p>
+        <p id="" class="">{action}</p>
+      </div>
+    </div>
+  </div>
+</div>

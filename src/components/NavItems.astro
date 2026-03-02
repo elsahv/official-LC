@@ -2,15 +2,15 @@
 const items = [
   {
     icon: "whats LC?",
-    link: "/ ",
+    link: "/#whats-lc ",
   },
   {
     icon: "how it works",
-    link: "/#portfolio ",
+    link: "/#how-it-works ",
   },
   {
     icon: "whats included",
-    link: "/#portfolio ",
+    link: "/#whats-included ",
   },
   {
     icon: "about",
@@ -28,7 +28,7 @@ const items = [
     <div class="border-t border-b border-carribean flex flex-col py-2">
       {
         items.map((item) => (
-          <div class="flex items-center space-x-2 text-2xl ml-1">
+          <div class="flex items-center space-x-2 text-xl font- ml-1">
             <a href={item.link}>{item.icon}</a>
           </div>
         ))

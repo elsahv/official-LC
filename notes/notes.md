@@ -1,8 +1,8 @@
 ---
 // import Hero from "../components/testComponents/sections/Hero.astro";
-// import WhatsIncluded from "../components/testComponents/sections/WhatsIncluded.astro";
-// import BuildAuthority from "../components/testComponents/sections/BuildAuthority.astro";
 // import AddressKeyProblem from "../components/testComponents/sections/AddressKeyProblem.astro";
+// import BuildAuthority from "../components/testComponents/sections/BuildAuthority.astro";
+// import WhatsIncluded from "../components/testComponents/sections/WhatsIncluded.astro";
 // import AIDA from "../components/testComponents/sections/AIDA.astro";
 // import HowItWorks from "../components/testComponents/sections/HowItWorks.astro";
 // import SocialProof from "../components/testComponents/sections/SocialProof.astro";

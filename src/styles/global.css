@@ -19,8 +19,8 @@ h2 {
 
 p {
   font-size: 17px;
-  padding-top: 5px;
-  padding-bottom: 8px;
+  /* padding-top: 5px;
+  padding-bottom: 8px; */
 }
 
 ._shadowText1 {
@@ -48,7 +48,7 @@ p {
 
 
 #about-paragraph2 {
- margin-top: 25px;
+ /* margin-top: 25px;    */
 }
 /* MOBLE SIZE ABOUT ME FONT */
 
@@ -95,14 +95,16 @@ p {
 
 
  
- #about #img-icon {
+ #whats-lc #img-icon {
     transform: scaleX(-1);
  }
 
  
 
 
- .sq-styles {
+ .sq-styles #sq {
   border: 1px solid black;
   border-radius: 15px;
- }
+  background: #f0ead2; 
+}
+ 
