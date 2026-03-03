@@ -6,19 +6,6 @@ import MainLayout from "./MainLayout.astro";
 const { frontmatter } = Astro.props;
 ---
 
-<!-- 
-- SLUGS: (see markdown)
-  -h1-1.brand concept: all these show strategic thinking... ex: “Boutique desert wellness retreat brand inspired by mid-century resort design.”
-
--h1-2.design systems:
-
--h1-3.finished site:
-
-- "ON BUILDING A STYLE SERIES":
-  -Make sure every choice has reasoning:
-  why those colors? spacing? layout? what business it serves?
-
-  -GOAL: stand out- Instead of one site, create multiple themed designs: -->
 <MainLayout>
   <div class="bg-test1">
     <LeftPanel />
@@ -69,24 +56,28 @@ const { frontmatter } = Astro.props;
               <section id="design-system" class="my-5">
                 <h2 class="font-bold pt-5">2.Design System</h2>
                 <p class="pb-5 mb-5">{frontmatter.designSystem}</p>
-                <!-- *DONE: WORK ON PALETTE COLORS V-->
-                <div id="palette-colors">
-                  <h2 class="font-bold">{frontmatter.paletteName}</h2>
-                  <img src={frontmatter.paletteScreenshot} alt="" />
-                  <p class="p-2">
-                    {frontmatter.paletteExplanation}
-                  </p>
-                </div>
-                <!-- *DONE: WORK ON PALETTE COLORS ^-->
               </section>
             </div>
 
             <section id="finished-website">
               <h2 class="font-bold pt-5">3.Finished Website Case Study</h2>
+              <img
+                src="https://dl.dropboxusercontent.com/scl/fi/erd9kmg0sibit24225dhm/roof.png?rlkey=61gvo5esptj7x9sephthvvqvz&st=hwpcpofo&dl=0"
+                alt=""
+              />
               <p class="pb-5 mb-5">{frontmatter.finishedWebsite}</p>
               <p class="font-bold">client: {frontmatter.client}</p>
               <p class="font-bold">problem:{frontmatter.problem}</p>
               <p class="font-bold">my approach:{frontmatter.myApproach}</p>
+              <!-- *DONE: WORK ON PALETTE COLORS V-->
+              <div id="palette-colors">
+                <h2 class="font-bold">{frontmatter.paletteName}</h2>
+                <img src={frontmatter.paletteScreenshot} alt="" />
+                <p class="p-2">
+                  {frontmatter.paletteExplanation}
+                </p>
+              </div>
+              <!-- *DONE: WORK ON PALETTE COLORS ^-->
               <p class="font-bold">
                 Strategies Employed:{frontmatter.strategiesEmployed}
               </p>

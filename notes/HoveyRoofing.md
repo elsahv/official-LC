@@ -1,3 +1,5 @@
+## 1. BRAND CONCEPT:
+
 <!-- A **roofing website** is not a vibe experiment. It’s a trust machine. -->
 
 BRAND CONCEPT:
@@ -19,6 +21,17 @@ This is a trust + legacy market. So your concept should be: Built to Protect Red
 _targetAudience_
 -This is who the brand is for.its not a vibe experiment. It’s a trust machine. Reliability & Transparency: - Clear estimates Honest diagnostics, Work explained up front. \*Why this works. Roofing decisions are serious and expensive. Trust beats flash. Stable. Established. Local.
 **Why this works:**
+
+### 📐 FOR LAYOUT DECISIONS: Layout Strategy
+
+Most contractor websites fail by:
+
+- Cluttering everything
+- Use stock photos everywhere
+- Have weak CTAs
+
+Not LC...
+Layout System- This is where you differentiate from 90% of contractor sites.
 
 Back up “experieanced” with:
 
@@ -47,6 +60,8 @@ Redlands based:
 - Spanish + Craftsman architecture
 - Hot summers, but not extreme desert identity
 
+## 2.DESIGN SYSTEM: v
+
 # Component Rules
 
 ### Buttons
@@ -66,3 +81,39 @@ Use bordered cards instead of heavy drop shadows.
 Feels:
 -Structured
 -Stable
+
+### 📐 Layout Strategy
+
+Most contractor websites fail by:
+
+- Cluttering everything
+- Use stock photos everywhere
+- Have weak CTAs
+
+## 🎨 Color Palette
+
+**Primary:**
+
+- _Brick Red:_ #8C3A2B — strong, architectural, reminiscent of tile roofs
+- _Dark Charcoal:_ #2C2C2C — anchors trust and seriousness
+
+**Neutral Base:**
+
+- _Warm Off-White:_ #F4F1EC — bright but not stark
+
+**Accents:**
+
+- _Slate Gray:_ #5A5E63 — sturdy, balanced (for text/icons)
+- _Gold/Yellow:_ #D9A24A — use sparingly for trust badges & CTAs
+
+**Usage Logic:**
+
+- Brick Red for **CTA buttons**
+- Dark Charcoal for **headlines**
+- Warm Off-White for **backgrounds**
+- Slate Gray for **body copy**
+
+_Why this palette?_ It subtly echoes:
+
+- Redlands architecture (tile roofs / brick facades)
+- Strength and dependability -->

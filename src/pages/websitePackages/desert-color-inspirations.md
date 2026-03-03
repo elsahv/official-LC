@@ -2,10 +2,10 @@
 id: 1
 layout: ../../layouts/MarkdownPostLayout.astro
 # layout: ../test.astro
-no: "01-roof"
-title: "Desert color inspirations"
+no: "01"
+title: "The Growing Pup"
 pubDate: 2022-07-01
-testItem1: "This is the Desert Color Inspirations kit. Here's what we have to offer:"
+testItem1: "This is the The Growing Pup kit. Here's what we have to offer:"
 image:
   url: "https://dl.dropboxusercontent.com/scl/fi/ofaszetg60epvok8kpdh0/rq-1-11-23.png?rlkey=8t41ceft4umwmot1nzdt3mnj7&st=mmux5w3p&dl=0"
   alt: "PHP & wordpress theme projects"
@@ -19,7 +19,7 @@ tags: ["php", "blogging", "learning in wordpress"]
 # backend: "wordpress"
 client: "HoveyRoofing"
 # CONTENT BELOW ABOUT CLIENT V
-elaborateTheme: "sandy undertones"
+elaborateTheme: "Art-directed web design for creative businesses."
 problem: "tesdfdsft"
 my approach: "test"
 Strategies Employed: "test"
@@ -35,7 +35,7 @@ typographyReasoning:
   "A strong humanist sans (e.g., Montserrat, Inter, or similar)
   — conveys modern but solid professional feel."
 designSystem: "This is where I explain the design system for desert color inspirations."
-layoutDecisions: "layoutDecisions"
+layoutDecisions: "This theme uses: Clean framed photos  ,Strong horizontal lines (mimic roof lines),Framed imagery,Real texture photos (tile, shingles, metal). This theme avoids: Avoid ,Soft organic shapes ,Playful blobs ,Over-designed graphics"
 # typographyPairings: "typographyPairings"
 # UIComponents: "UIComponents"
 paletteName: "Desert Color Inspirations"

@@ -2,8 +2,8 @@
 id: 1
 layout: ../../layouts/MarkdownPostLayout.astro
 # layout: ../test.astro
-no: "03-jungle"
-title: "Out of this world!"
+no: "03"
+title: "The Alpha"
 pubDate: 2022-07-01
 testItem1: "A place where Morongo basin artists and small businesses can tell their story"
 image:

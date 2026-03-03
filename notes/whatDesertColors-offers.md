@@ -1,22 +1,18 @@
 PLANNING FOR CONTENT:
 
-# What Desert Color inspirations offer:
+# What does Desert Color inspirations offer:
 
 =========================================================================
 
-## 1. BRAND CONCEPT:
+## 1. BRAND CONCEPT (what it is):
 
 =========================================================================
 
-=========================================================================
-
-## 2.DESIGN SYSTEM:
+## 2.DESIGN STRATEGY (why it is):
 
 =========================================================================
 
-=========================================================================
-
-## 3.FINISHED SITE
+## 3.FINISHED SITE (case study)
 
 =========================================================================
 
@@ -28,54 +24,14 @@ PLANNING FOR CODE:
 
 <Hero /> --v
 
-> Big bold statement:
-> DESERT-READY ROOFING  
-> Built to Withstand 115° Summers
-
-- Strong CTA:
-- Get a Free Inspection
-- Call Now (Sticky on mobile)
-
 ---
 
- <Trust Section />
-Include:
-- Licensed & Insured badges
-- Warranty info
-- Before/after photos
-- Service area list
+# 🧱DESERT COLOR INSPIRATIONS- Website Information Architecture
 
-Desert contractors win on credibility, not cleverness.
-
----
-
-<!--# Sections You Must Include
- 1. Services Overview
-   - Tile Roofing
-   - Shingle Roofing
-   - Roof Repairs
-   - Leak Detection
-
-2. Why Choose Us
-   - Licensed & Insured
-   - Locally Owned
-   - Warranty Backed
-3. Service Areas
-   - Redlands
-   - Loma Linda
-   - Highland
-   - Yucaipa
-4. Reviews Section
-   Even mock ones for portfolio realism.
-5. Before & After Gallery -->
-
----
-
-# 🧱 Website Information Architecture
-
+<!--
 Here’s a **conversion-optimized structure** your site should follow:
 
-1. **Hero Section**
+<!-- 1. **Hero Section**
    - Headline: “Trusted Roofing for Redlands Homes Since 1988”
    - Sub: Short value points (Replacements • Repairs • Affordable Quotes)
    - Primary CTA: _Get a Free Roof Inspection_
@@ -94,10 +50,10 @@ Here’s a **conversion-optimized structure** your site should follow:
    - Reviews from neighbors (Nextdoor / BestPros / Google)
    - Badges (licensed + insured)
    - Memberships (if applicable)
-5. **Before & After Gallery**  
+5. **Before & After Gallery**
    Real work photos = huge credibility bump
-6. **Service Area**  
+6. **Service Area**
    Redlands suburbs (e.g., Highland, Loma Linda, Yucaipa)
 7. **Contact / Get a Quote Form**
    - Simple, short form
-   - Phone number + click-to-call on mobile
+   - Phone number + click-to-call on mobile --> -->

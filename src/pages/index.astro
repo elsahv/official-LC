@@ -1,13 +1,13 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Contact from "../components/sections/Contact.astro";
-const caseStudies = await Astro.glob("./caseStudies/*.md");
-const screenshots = await Astro.glob("./screenshots/*.md");
-import CaseStudyCard from "../components/CaseStudyCard.astro";
-import ExpandOnWebsitesCard from "../components/ExpandOnWebsitesCard.astro";
+const websitePackages = await Astro.glob("./websitePackages/*.md");
+const techApplications = await Astro.glob("./techApplications/*.md");
 import LeftPanel from "../layouts/LeftPanel.astro";
 import Footer from "../components/Footer.astro";
 import TableContents from "../components/sections/TableContents.astro";
+import TechApplicationCard from "../components/TechApplicationCard.astro";
+import WebsitePackageCard from "../components/WebsitePackageCard.astro";
 ---
 
 <MainLayout>
@@ -20,13 +20,18 @@ import TableContents from "../components/sections/TableContents.astro";
       <div id="right-panel-wrapper" class="border-l-2 border border-gray-500">
         <div id="right-panel-container" class="bg rounded-bl mr-2 md:p-5">
           <div id="" class="p-5">
-            <div id="intro-section" class="p-5 opacity-65 mt-[75px]">
+            <div id="intro-section" class="p-5 opacity-65 mt-[75px]w-3/4">
               <div class="pb-2 mt-5">
-                <h1 class="text-4xl">explore case studies</h1>
+                <!-- KEEP HEADLINE, I REALLY LIKE THIS V -->
+                <h1 class="text-4xl">
+                  Web Design Inspired by Southern California Aesthetics
+                </h1>
+                <!-- KEEP HEADLINE, I REALLY LIKE THIS ^   -->
+
                 <p>
                   websites inspired by desert colors, and palm springs modernism
                   styles... from someone who's lived the desert life for a near
-                  decade!
+                  decade! explore website packages... v
                 </p>
               </div>
             </div>
@@ -37,8 +42,8 @@ import TableContents from "../components/sections/TableContents.astro";
               class="bg- mx-5 px-5 grid 2xl:grid-cols-2 gap-5 my- bg-"
             >
               {
-                caseStudies.map((caseStudy) => (
-                  <CaseStudyCard
+                websitePackages.map((caseStudy) => (
+                  <WebsitePackageCard
                     no={caseStudy.frontmatter.no}
                     image={caseStudy.frontmatter.image.url}
                     alt={caseStudy.frontmatter.image.alt}
@@ -59,8 +64,8 @@ import TableContents from "../components/sections/TableContents.astro";
               class="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-x-1 pl-2 pb-5"
             >
               {
-                screenshots.map((help) => (
-                  <ExpandOnWebsitesCard
+                techApplications.map((help) => (
+                  <TechApplicationCard
                     no={help.frontmatter.no}
                     image={help.frontmatter.image.url}
                     alt={help.frontmatter.image.alt}
