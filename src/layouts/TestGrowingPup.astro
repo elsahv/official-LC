@@ -1,0 +1,80 @@
+---
+import Footer from "../components/Footer.astro";
+import LeftPanel from "../layouts/LeftPanel.astro";
+import BackBtn from "../components/BackBtn.astro";
+import MainLayout from "./MainLayout.astro";
+import AboutTemplate from "../components/testSections/AboutTemplate.astro";
+import PagesIncluded from "../components/sections/PagesIncluded.astro";
+import CenterPageBanner from "../components/testComponents/shared/CenterPageBanner.astro";
+import FourImgBanner from "../components/testComponents/FourImgBanner.astro";
+import NewCta from "../components/testSections/NewCta.astro";
+---
+
+<MainLayout>
+  <div class="bg-">
+    <LeftPanel />
+  </div>
+  <div id="markdown-post" class="text-lg">
+    <div
+      id="right-side-markdown-container"
+      class="bg-parchment text-[#5d2a42] h-screen md:absolute relative right-0 md:w-3/5 w-full overflow-y-scroll overflow-x-hidden"
+    >
+      <section class="">
+        <div id="website-content" class="bg- pl- dropshadow-3xl mt-3">
+          <!-- *TITLE  DONE V -->
+          <CenterPageBanner
+            BannerTitle="The Growing Pup"
+            paragraph="A single page template kit for small businesses starting It’s a trust machine. no frills."
+          />
+          <!-- *TITLE  DONE ^ -->
+
+          <AboutTemplate />
+          <PagesIncluded />
+          <NewCta />
+          <FourImgBanner />
+          <!-- ADD HOW IT WORKS CTA? -->
+          <!--  ?:  REVIEWS V-->
+          <!-- 
+          <section id="reviews" class="bg-test1">
+            <h2>REVIEWS</h2>
+          </section> -->
+          <!--  ?:  REVIEWS V-->
+
+          <!--  ?:  HOW IT WORKS V-->
+
+          <!-- <section id="how-it-works" class="bg-test2">
+            <h2>HOW IT WORKS</h2>
+            <p>
+              -FOUNDATION FOR PREMIUM WEBSITE: LOGO, COLOR SCHEME, FONT,
+              INTENTIONAL IMAGES, STRAIGHTFOWARD (don’t make me think, prevent
+              'rage clicks').
+            </p>
+            <h3>
+              --STRATEGY--PREMIUM SITE SHOULD OFFER: 1) option for web dev to do
+              everything, 2) option where (now-empowered) client has total
+              control over content, access to wordpress or sanity. Client feels
+              better about owning site and are able to easily navigate cms.
+              -IDEA: CREATE ONBOARDING VIDEO AS OPPOSED TO LIVE ONBOARDING EVERY
+              TIME.C STRUCTURE: sitemap
+            </h3>
+          </section> -->
+
+          <!-- TODO:  HOW IT WORKS ^-->
+
+          <!-- <h2>FAQ</h2>
+
+          <h2>CTA</h2>
+          <h2>CONTACT</h2> -->
+
+          <div class="mt-5 my-5 py-[55px] pt-2 opacity-80 text-lg">
+            <div class="">
+              <slot />
+            </div>
+            <BackBtn />
+          </div>
+        </div>
+        <Footer />
+      </section>
+    </div>
+  </div>
+</MainLayout>

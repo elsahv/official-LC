@@ -1,0 +1,151 @@
+---
+import Footer from "../components/Footer.astro";
+import LeftPanel from "../layouts/LeftPanel.astro";
+import BackBtn from "../components/BackBtn.astro";
+import MainLayout from "./MainLayout.astro";
+import AboutTemplate from "../components/testSections/AboutTemplate.astro";
+import PagesIncluded from "../components/sections/PagesIncluded.astro";
+import CenterPageBanner from "../components/testComponents/shared/CenterPageBanner.astro";
+import FourImgBanner from "../components/testComponents/FourImgBanner.astro";
+import NewCta from "../components/testSections/NewCta.astro";
+const { frontmatter } = Astro.props;
+---
+
+<MainLayout>
+  <div class="bg-">
+    <LeftPanel />
+  </div>
+  <div id="markdown-post" class="text-lg">
+    <div
+      id="right-side-markdown-container"
+      class="bg-parchment text-[#5d2a42] h-screen md:absolute relative right-0 md:w-3/5 w-full overflow-y-scroll overflow-x-hidden"
+    >
+      <section class="">
+        <div id="website-content" class="bg- pl- dropshadow-3xl mt-3">
+          <!-- *TITLE  DONE V -->
+
+          <div id="BannerTitle-wrapper" class="bg- mt-[150px] pt-5 pl-5">
+            <div id="BannerTitle-section" class="pl-5 ml-5">
+              <div id="title-banner" class="">
+                <h1
+                  class="2xl:text-5xl md:text-4xl text-3xl pb-2 pt-2 font-semibold"
+                >
+                  {frontmatter.title}
+                </h1>
+              </div>
+
+              <div id="Banner-paragraph" class="bg- md:mb-5">
+                <p class="text-xl">
+                  {frontmatter.paragraph}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- *TITLE  DONE ^ -->
+          <!-- TODO:  ABOUT TEMPLATE V-->
+
+          <section id="about" class="p-[50px] mt-[50px] mb-5 mx-5 bg-">
+            <div class="m-5 p-5">
+              <div class="bg- grid grid-cols-4 mr-">
+                <div id="test1" class="col-span-2 bg- flex">
+                  <img
+                    class="bg-onyx py-1 pl-1 pr-2 drop-shadow-md border border-black"
+                    src={frontmatter.aboutImage.url}
+                    alt=""
+                  />
+                </div>
+                <div
+                  id=""
+                  class="bg- col-span-2 bg- p-5 ml-3 mt-[55px] text-lg"
+                >
+                  <div
+                    class="bg-carribean text-parchment border border-black p-5"
+                  >
+                    <h2 class="text-3xl font-bold">
+                      {frontmatter.aboutTemplate}
+                    </h2>
+                    <p class="pt-2">
+                      {frontmatter.offers}
+                    </p>{" "}
+                    {/* //?<-- LINK TO PORTFOLIO?*/}
+                    <p class="">
+                      {frontmatter.brandConcept}
+                    </p>
+                  </div>
+
+                  <div class="bg-test2 border border-black mt-[50px] p-5">
+                    <p class="">
+                      {frontmatter.problemSolve}
+                    </p>
+                    <ul>
+                      <li class="">
+                        - {frontmatter.solveListItem1}
+                      </li>
+                      <li class="">
+                        - {frontmatter.solveListItem2}
+                      </li>
+                      <!-- <li class="">
+                        - and etc! See
+                        <a href="/#services" class="pl-1 underline">
+                          services below!</a
+                        >
+                      </li> -->
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- TODO:  ABOUT TEMPLATE ^-->
+
+          <PagesIncluded />
+          <NewCta />
+          <FourImgBanner />
+          <!-- ADD HOW IT WORKS CTA? -->
+          <!--  ?:  REVIEWS V-->
+          <!-- 
+          <section id="reviews" class="bg-test1">
+            <h2>REVIEWS</h2>
+          </section> -->
+          <!--  ?:  REVIEWS V-->
+
+          <!--  ?:  HOW IT WORKS V-->
+
+          <!-- <section id="how-it-works" class="bg-test2">
+            <h2>HOW IT WORKS</h2>
+            <p>
+              -FOUNDATION FOR PREMIUM WEBSITE: LOGO, COLOR SCHEME, FONT,
+              INTENTIONAL IMAGES, STRAIGHTFOWARD (don’t make me think, prevent
+              'rage clicks').
+            </p>
+            <h3>
+              --STRATEGY--PREMIUM SITE SHOULD OFFER: 1) option for web dev to do
+              everything, 2) option where (now-empowered) client has total
+              control over content, access to wordpress or sanity. Client feels
+              better about owning site and are able to easily navigate cms.
+              -IDEA: CREATE ONBOARDING VIDEO AS OPPOSED TO LIVE ONBOARDING EVERY
+              TIME.C STRUCTURE: sitemap
+            </h3>
+          </section> -->
+
+          <!-- TODO:  HOW IT WORKS ^-->
+
+          <!-- <h2>FAQ</h2>
+
+          <h2>CTA</h2>
+          <h2>CONTACT</h2> -->
+
+          <div class="mt-5 my-5 py-[55px] pt-2 opacity-80 text-lg">
+            <div class="">
+              <slot />
+            </div>
+            <BackBtn />
+          </div>
+        </div>
+        <Footer />
+      </section>
+    </div>
+  </div>
+</MainLayout>

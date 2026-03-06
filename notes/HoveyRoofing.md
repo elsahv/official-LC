@@ -1,14 +1,8 @@
+FOR HOVEYROOFING TECH APPLICATION:
+
 ## 1. BRAND CONCEPT:
 
 <!-- A **roofing website** is not a vibe experiment. It’s a trust machine. -->
-
-BRAND CONCEPT:
-You’re not designing for aesthetic admiration.
-You’re designing for:
--📞Calls
--📝Quote requests
--🛠️Authority
--🧱Durability `
 
 _-brandConcept:_ Built to Protect Redlands Homes for Generations. Stable. Established. Local.
 
@@ -19,8 +13,9 @@ _-brandConcept:_ Built to Protect Redlands Homes for Generations. Stable. Establ
 This is a trust + legacy market. So your concept should be: Built to Protect Redlands Homes for Generations.
 
 _targetAudience_
--This is who the brand is for.its not a vibe experiment. It’s a trust machine. Reliability & Transparency: - Clear estimates Honest diagnostics, Work explained up front. \*Why this works. Roofing decisions are serious and expensive. Trust beats flash. Stable. Established. Local.
-**Why this works:**
+
+- Reliability & Transparency: - Clear estimates Honest diagnostics, Work explained up front. \*Why this works. Roofing decisions are serious and expensive. Trust beats flash. Stable. Established. Local.
+  **Why this works:**
 
 ### 📐 FOR LAYOUT DECISIONS: Layout Strategy
 

@@ -33,8 +33,11 @@ const items = [
 ];
 ---
 
-<div class="bg- pt-1 mx-1 bg-">
-  <div id="gallery-grid" class="2xl grid md:grid-cols-4 grid-cols-2 gap-4 py-4">
+<div class="bg- pt-1 mt-5 bg-">
+  <div
+    id="gallery-grid"
+    class="mt-5 2xl grid md:grid-cols-4 grid-cols-2 gap-1 py-4"
+  >
     {
       items.map((item) => (
         <div id="sq" class="">
@@ -45,7 +48,7 @@ const items = [
             <img
               src={item.image}
               alt=""
-              class="w-full 2xl:h-[300px] h-[230px] sq-styles"
+              class="w-full 2xl:h-[200px] h-[230px] border border-black "
             />
           </a>
         </div>

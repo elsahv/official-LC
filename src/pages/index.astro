@@ -1,13 +1,13 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Contact from "../components/sections/Contact.astro";
-const websitePackages = await Astro.glob("./websitePackages/*.md");
-const techApplications = await Astro.glob("./techApplications/*.md");
 import LeftPanel from "../layouts/LeftPanel.astro";
 import Footer from "../components/Footer.astro";
 import TableContents from "../components/sections/TableContents.astro";
 import TechApplicationCard from "../components/TechApplicationCard.astro";
 import WebsitePackageCard from "../components/WebsitePackageCard.astro";
+const techApplications = await Astro.glob("./techApplications/*.md");
+const websitePackages = await Astro.glob("./websitePackages/*.md");
 ---
 
 <MainLayout>

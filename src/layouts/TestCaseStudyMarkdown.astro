@@ -1,0 +1,103 @@
+---
+import Footer from "../components/Footer.astro";
+import LeftPanel from "../layouts/LeftPanel.astro";
+import BackBtn from "../components/BackBtn.astro";
+import MainLayout from "./MainLayout.astro";
+const { frontmatter } = Astro.props;
+---
+
+<!-- !NOTE: THIS WAS ORIGINALLY WEBSITE PACKAGE MD, WE ARE NOW USING IT FOR CASE STUDY MD -->
+<MainLayout>
+  <div class="bg-test1">
+    <LeftPanel />
+  </div>
+  <div id="markdown-post" class="text-lg">
+    <div
+      id="right-side-markdown-container"
+      class="bg-papaya text-[#5d2a42] h-screen md:absolute relative right-0 md:w-3/5 w-full overflow-y-scroll overflow-x-hidden 2xl:p-5 md:p-3"
+    >
+      <section class="md:mx-5 mx-5 p-5">
+        <div class="p-5 mr -5">
+          <div id="" class="bg-">
+            <div class="mt-5 pt-5">
+              <div id="title-banner" class="">
+                <h1
+                  class="2xl:text-5xl md:text-4xl text-3xl pb-2 pt-2 font-semibold"
+                >
+                  {frontmatter.title}
+                </h1>
+              </div>
+            </div>
+
+            <p>{frontmatter.testItem1}</p>
+            <div id="images-wrapper" class="bg-">
+              <a href={frontmatter.websiteUrl} target="_blank" rel="noreferrer">
+                <img
+                  id="PRIMARY-image"
+                  src={frontmatter.image.url}
+                  alt=""
+                  class="opacity-80 border border-rosyBrown drop-shadow-3xl rounded mt-[50px] col-span-2"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="website-content" class="pl-3 pr-5 mr-5 dropshadow-3xl mt-3">
+          <div id="elaborate-theme">
+            <h1 class="font-bold">
+              Elaborate on Theme:{frontmatter.elaborateTheme}
+            </h1>
+            <section id="brand-concept">
+              <h2 class="font-bold pt-5">1.Brand Concept</h2>
+              <p class="pb-5 mb-5">{frontmatter.brandConcept}</p>
+              <p class="pb-5 mb-5">{frontmatter.targetAudience}</p>
+              <p class="pb-5 mb-5">{frontmatter.layoutDecisions}</p>
+              <p>{frontmatter.typographyReasoning}</p>
+              <p>{frontmatter.mood}</p>
+            </section>
+
+            <section id="design-system" class="my-5">
+              <h2 class="font-bold pt-5">2.Design System</h2>
+              <p class="pb-5 mb-5">{frontmatter.designSystem}</p>
+            </section>
+          </div>
+
+          <section id="finished-website">
+            <h2 class="font-bold pt-5">3.Finished Website Case Study</h2>
+            <img
+              src="https://dl.dropboxusercontent.com/scl/fi/erd9kmg0sibit24225dhm/roof.png?rlkey=61gvo5esptj7x9sephthvvqvz&st=hwpcpofo&dl=0"
+              alt=""
+            />
+            <p class="pb-5 mb-5">{frontmatter.finishedWebsite}</p>
+            <p class="font-bold">client: {frontmatter.client}</p>
+            <p class="font-bold">problem:{frontmatter.problem}</p>
+            <p class="font-bold">my approach:{frontmatter.myApproach}</p>
+            <!-- *DONE: WORK ON PALETTE COLORS V-->
+            <div id="palette-colors">
+              <h2 class="font-bold">{frontmatter.paletteName}</h2>
+              <img src={frontmatter.paletteScreenshot} alt="" />
+              <p class="p-2">
+                {frontmatter.paletteExplanation}
+              </p>
+            </div>
+            <!-- *DONE: WORK ON PALETTE COLORS ^-->
+            <p class="font-bold">
+              Strategies Employed:{frontmatter.strategiesEmployed}
+            </p>
+            <p class="font-bold">Results:{frontmatter.results}</p>
+            <p class="font-bold">Next Steps:{frontmatter.nextSteps}</p>
+            <p class="font-bold">Conclusion:{frontmatter.conclusion}</p>
+          </section>
+          <div class="mt-5 my-5 py-[55px] pt-2 opacity-80 text-lg">
+            <div class="bg-">
+              <slot />
+            </div>
+            <!-- <Contact /> -->
+            <BackBtn />
+          </div>
+        </div>
+      </section>
+      <Footer />
+    </div>
+  </div>
+</MainLayout>
