@@ -9,6 +9,39 @@ import CenterPageBanner from "../components/testComponents/shared/CenterPageBann
 import FourImgBanner from "../components/testComponents/FourImgBanner.astro";
 import NewCta from "../components/testSections/NewCta.astro";
 const { frontmatter } = Astro.props;
+
+const items = [
+  {
+    id: 1,
+    image:
+      "https://dl.dropboxusercontent.com/scl/fi/jtfnbqyqk5ly03x5kspuz/wtbh-3-26-24.png?rlkey=0igc90thtm07w1i9cardfeu3h&st=7m58a2i4&dl=0",
+    title: "DISCOVERY PHASE",
+    link: "/ ",
+  },
+  {
+    id: 2,
+    image:
+      "https://dl.dropboxusercontent.com/scl/fi/https://www.dropbox.com/scl/fi/r2memu9vr71tw03oe57kz/IMG_0300.jpg?rlkey=k9upvwvx4vudmyv88f8srhxlu&st=9jqc6rlj&dl=0",
+    title: "CREATIVE PHASE",
+    link: "/ ",
+  },
+  {
+    id: 3,
+    image:
+      "https://dl.dropboxusercontent.com/scl/fi/oraxtrdwq2apy6x4f87xj/fish-screenshot.jpg?rlkey=8woeczr9d8n7gqpqfbbnayb9e&st=bv1bc7kp&dl=0",
+
+    title: "DEVELOPMENT PHASE",
+    link: "/ ",
+  },
+  {
+    id: 4,
+    image:
+      "https://dl.dropboxusercontent.com/scl/fi/7a3l8ubz95eom7np54z39/2-23-25.png?rlkey=l0v1smbmzd7vqdpyt7mh708xh&st=vzxtp941&dl=0",
+
+    title: "LAUNCH PHASE",
+    link: "/ ",
+  },
+];
 ---
 
 <MainLayout>
@@ -43,8 +76,7 @@ const { frontmatter } = Astro.props;
           </div>
 
           <!-- *TITLE  DONE ^ -->
-          <!-- TODO:  ABOUT TEMPLATE V-->
-
+          <!-- *ABOUT TEMPLATE V-->
           <section id="about" class="p-[50px] mt-[50px] mb-5 mx-5 bg-">
             <div class="m-5 p-5">
               <div class="bg- grid grid-cols-4 mr-">
@@ -98,11 +130,157 @@ const { frontmatter } = Astro.props;
             </div>
           </section>
 
-          <!-- TODO:  ABOUT TEMPLATE ^-->
+          <!-- *ABOUT TEMPLATE ^-->
 
-          <PagesIncluded />
-          <NewCta />
-          <FourImgBanner />
+          <!-- TODO: PAGES INCLUDED TEMPLATE V-->
+
+          <section
+            id=""
+            class="bg-rosyBrown text-parchment border-t-2 border-b-2 border-black mt-5"
+          >
+            <div id="grid" class="grid grid-cols-2">
+              <div id="sq1" class="border-r-2 border-black bg- p-5">
+                <div id="flex" class="grid grid-cols-2">
+                  <div class="">
+                    <h3>included pages</h3>
+                    <ul id="included-pages">
+                      <li>{frontmatter.includedPageItem1}</li>
+                      <li>{frontmatter.includedPageItem2}</li>
+                      <li>{frontmatter.includedPageItem3}</li>
+                      <li>{frontmatter.includedPageItem4}</li>
+                    </ul>
+                  </div>
+
+                  <div class="">
+                    <h3>Bonus pages</h3>
+                    <ul id="bonus-pages">
+                      <li>{frontmatter.bonusPageItem1}</li>
+                      <li>{frontmatter.bonusPageItem2}</li>
+                      <li>{frontmatter.bonusPageItem3}</li>
+                      <li>{frontmatter.bonusPageItem4}</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div id="sq2" class="bg-carribean text-parchment p-">
+                <img src={frontmatter.imgForPagesOffered} alt="" />
+              </div>
+            </div>
+          </section>
+          <!-- TODO: PAGES INCLUDED TEMPLATE ^-->
+
+          <section id="/" class="py-5 mt-5">
+            <div id="" class="2xl:pt-[120px] pt-[90px] pb-5 mb-5">
+              <div class="grid 2xl:grid-cols-2 grid-cols-1">
+                <section class="2xl:px-5 px-1 flex items-center">
+                  <div class="w-full lg:pl-[70px] mt-5 px-5">
+                    <div class="py-1 mb-1">
+                      <!-- <h1 class="text-4xl text-center py-1 my-1 font-semibold"> -->
+                      <!-- New Cta -->
+                      <!-- </h1> -->
+                      <p class="text-lg pl-1 pt-1 font-semibold">
+                        {frontmatter.newCtaTitle}
+                      </p>
+                    </div>
+                    {
+                      /* <p class="pb-5">
+               Why should you prefer a custom-made
+                website, when you can simply use wix or wordpress? Because a
+                custom website fits your business, personality, goals... and you
+                alone.
+              </p> */
+                    }
+
+                    <ul class="md:text-lg text-md pt-1">
+                      <li>
+                        <b>-</b>{frontmatter.newCtaListItem1}
+                      </li>
+                      <li>
+                        {frontmatter.newCtaListItem2}
+                      </li>
+                      <li>
+                        {frontmatter.newCtaListItem3}
+                      </li>
+                      <li>
+                        {frontmatter.newCtaListItem4}
+                      </li>
+                    </ul>
+
+                    <div class="p-1 mt-5 text-parchment text-lg">
+                      <button
+                        class="dropshadow-lg bg-test1 hover:text-white mr-1 px-2 py-1 dropshadow-md"
+                      >
+                        <a href="/#about">About</a>
+                      </button>
+                      <button
+                        class="dropshadow-lg bg-carribean hover:text-orange ml-1 px-2 py-1 dropshadow-md"
+                      >
+                        <a href="/#contact">Contact</a>
+                      </button>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="pt-[25px]">
+                  <img
+                    src={frontmatter.newCTAImg}
+                    alt=""
+                    class="border border-black"
+                  />
+                </section>
+              </div>
+            </div>
+          </section>
+
+          <!-- TODO V -->
+
+          <div class="bg- pt-1 mt-5 bg-">
+            <div
+              id="gallery-grid"
+              class="mt-5 2xl grid md:grid-cols-4 grid-cols-2 gap-1 py-4"
+            >
+              <div id="img-1" class="">
+                <a href="/">
+                  <img
+                    src={frontmatter.EndGalleryImg1}
+                    alt=""
+                    class="w-full 2xl:h-[200px] h-[230px] border border-black"
+                  />
+                </a>
+              </div>
+
+              <div id="img-2" class="">
+                <a href="/">
+                  <img
+                    src={frontmatter.EndGalleryImg2}
+                    alt=""
+                    class="w-full 2xl:h-[200px] h-[230px] border border-black"
+                  />
+                </a>
+              </div>
+              <div id="img-3" class="">
+                <a href="/">
+                  <img
+                    src={frontmatter.EndGalleryImg3}
+                    alt=""
+                    class="w-full 2xl:h-[200px] h-[230px] border border-black"
+                  />
+                </a>
+              </div>
+
+              <div id="img-4" class="">
+                <a href="/">
+                  <img
+                    src={frontmatter.EndGalleryImg4}
+                    alt=""
+                    class="w-full 2xl:h-[200px] h-[230px] border border-black"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ! ^ -->
           <!-- ADD HOW IT WORKS CTA? -->
           <!--  ?:  REVIEWS V-->
           <!-- 
@@ -112,23 +290,6 @@ const { frontmatter } = Astro.props;
           <!--  ?:  REVIEWS V-->
 
           <!--  ?:  HOW IT WORKS V-->
-
-          <!-- <section id="how-it-works" class="bg-test2">
-            <h2>HOW IT WORKS</h2>
-            <p>
-              -FOUNDATION FOR PREMIUM WEBSITE: LOGO, COLOR SCHEME, FONT,
-              INTENTIONAL IMAGES, STRAIGHTFOWARD (don’t make me think, prevent
-              'rage clicks').
-            </p>
-            <h3>
-              --STRATEGY--PREMIUM SITE SHOULD OFFER: 1) option for web dev to do
-              everything, 2) option where (now-empowered) client has total
-              control over content, access to wordpress or sanity. Client feels
-              better about owning site and are able to easily navigate cms.
-              -IDEA: CREATE ONBOARDING VIDEO AS OPPOSED TO LIVE ONBOARDING EVERY
-              TIME.C STRUCTURE: sitemap
-            </h3>
-          </section> -->
 
           <!-- TODO:  HOW IT WORKS ^-->
 
