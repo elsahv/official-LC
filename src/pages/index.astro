@@ -24,10 +24,10 @@ const websitePackages = await Astro.glob("./websitePackages/*.md");
               <div class="pb-2 mt-5">
                 <!-- KEEP HEADLINE, I REALLY LIKE THIS V -->
                 <h1 class="text-4xl">
-                  Web Design Inspired by Southern California Aesthetics
+                  Web Design Inspired Kits created using Southern California
+                  Aesthetics
                 </h1>
                 <!-- KEEP HEADLINE, I REALLY LIKE THIS ^   -->
-
                 <p>
                   websites inspired by desert colors, and palm springs modernism
                   styles... from someone who's lived the desert life for a near
@@ -39,12 +39,13 @@ const websitePackages = await Astro.glob("./websitePackages/*.md");
             <!-- WHAT ALL BUILDS OFFER: about, services, contact, what every small business needs in  a site vvvv -->
             <div
               id="case-studies-grid"
-              class="bg- mx-5 px-5 grid 2xl:grid-cols-2 gap-5 my- bg-"
+              class="bg- ml-5 mr-[50px] px-5 grid 2xl:grid-cols-2 gap-5 my- bg-"
             >
               {
                 websitePackages.map((caseStudy) => (
                   <WebsitePackageCard
                     no={caseStudy.frontmatter.no}
+                    title={caseStudy.frontmatter.title}
                     image={caseStudy.frontmatter.image.url}
                     alt={caseStudy.frontmatter.image.alt}
                     url={caseStudy.url}

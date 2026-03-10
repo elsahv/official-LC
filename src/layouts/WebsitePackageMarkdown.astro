@@ -3,45 +3,7 @@ import Footer from "../components/Footer.astro";
 import LeftPanel from "../layouts/LeftPanel.astro";
 import BackBtn from "../components/BackBtn.astro";
 import MainLayout from "./MainLayout.astro";
-import AboutTemplate from "../components/testSections/AboutTemplate.astro";
-import PagesIncluded from "../components/sections/PagesIncluded.astro";
-import CenterPageBanner from "../components/testComponents/shared/CenterPageBanner.astro";
-import FourImgBanner from "../components/testComponents/FourImgBanner.astro";
-import NewCta from "../components/testSections/NewCta.astro";
 const { frontmatter } = Astro.props;
-
-const items = [
-  {
-    id: 1,
-    image:
-      "https://dl.dropboxusercontent.com/scl/fi/jtfnbqyqk5ly03x5kspuz/wtbh-3-26-24.png?rlkey=0igc90thtm07w1i9cardfeu3h&st=7m58a2i4&dl=0",
-    title: "DISCOVERY PHASE",
-    link: "/ ",
-  },
-  {
-    id: 2,
-    image:
-      "https://dl.dropboxusercontent.com/scl/fi/https://www.dropbox.com/scl/fi/r2memu9vr71tw03oe57kz/IMG_0300.jpg?rlkey=k9upvwvx4vudmyv88f8srhxlu&st=9jqc6rlj&dl=0",
-    title: "CREATIVE PHASE",
-    link: "/ ",
-  },
-  {
-    id: 3,
-    image:
-      "https://dl.dropboxusercontent.com/scl/fi/oraxtrdwq2apy6x4f87xj/fish-screenshot.jpg?rlkey=8woeczr9d8n7gqpqfbbnayb9e&st=bv1bc7kp&dl=0",
-
-    title: "DEVELOPMENT PHASE",
-    link: "/ ",
-  },
-  {
-    id: 4,
-    image:
-      "https://dl.dropboxusercontent.com/scl/fi/7a3l8ubz95eom7np54z39/2-23-25.png?rlkey=l0v1smbmzd7vqdpyt7mh708xh&st=vzxtp941&dl=0",
-
-    title: "LAUNCH PHASE",
-    link: "/ ",
-  },
-];
 ---
 
 <MainLayout>
@@ -51,36 +13,37 @@ const items = [
   <div id="markdown-post" class="text-lg">
     <div
       id="right-side-markdown-container"
-      class="bg-parchment text-[#5d2a42] h-screen md:absolute relative right-0 md:w-3/5 w-full overflow-y-scroll overflow-x-hidden"
+      class="text-[#5d2a42] bg-parchment h-screen md:absolute relative right-0 md:w-3/5 w-full overflow-y-scroll overflow-x-hidden"
     >
       <section class="">
-        <div id="website-content" class="bg- pl- dropshadow-3xl mt-3">
-          <!-- *TITLE  DONE V -->
-
-          <div id="BannerTitle-wrapper" class="bg- mt-[150px] pt-5 pl-5">
+        <div id="website-content" class="pl- dropshadow-3xl mt-3">
+          <!-- *TITLE BANNER V-->
+          <div
+            id="BannerTitle-wrapper"
+            class="bg-text-parchment pb-5 mt-[150px] pt-5 pl-5"
+          >
             <div id="BannerTitle-section" class="pl-5 ml-5">
               <div id="title-banner" class="">
                 <h1
                   class="2xl:text-5xl md:text-4xl text-3xl pb-2 pt-2 font-semibold"
                 >
-                  {frontmatter.title}
+                  Case Study: {frontmatter.title}
                 </h1>
               </div>
 
               <div id="Banner-paragraph" class="bg- md:mb-5">
-                <p class="text-xl">
+                <p class="text-xl pl-2">
                   {frontmatter.paragraph}
                 </p>
               </div>
             </div>
           </div>
 
-          <!-- *TITLE  DONE ^ -->
-          <!-- *ABOUT TEMPLATE V-->
+          <!-- * ABOUT HERO V -->
           <section id="about" class="p-[50px] mt-[50px] mb-5 mx-5 bg-">
-            <div class="m-5 p-5">
-              <div class="bg- grid grid-cols-4 mr-">
-                <div id="test1" class="col-span-2 bg- flex">
+            <div class="2xl:m-5 2xl:p-5">
+              <div class="bg- grid 2xl:grid-cols-4">
+                <div id=" " class="2xl:col-span-2 col-span-1 flex">
                   <img
                     class="bg-onyx py-1 pl-1 pr-2 drop-shadow-md border border-black"
                     src={frontmatter.aboutImage.url}
@@ -89,24 +52,21 @@ const items = [
                 </div>
                 <div
                   id=""
-                  class="bg- col-span-2 bg- p-5 ml-3 mt-[55px] text-lg"
+                  class="bg- col-span-2 bg- p-5 2xl:ml-3 mt-[55px] text-lg"
                 >
-                  <div
-                    class="bg-carribean text-parchment border border-black p-5"
-                  >
+                  <div class="bg- text- border border-black p-5">
                     <h2 class="text-3xl font-bold">
                       {frontmatter.aboutTemplate}
                     </h2>
                     <p class="pt-2">
                       {frontmatter.offers}
                     </p>{" "}
-                    {/* //?<-- LINK TO PORTFOLIO?*/}
                     <p class="">
                       {frontmatter.brandConcept}
                     </p>
                   </div>
 
-                  <div class="bg-test2 border border-black mt-[50px] p-5">
+                  <div class="bg- border border-black mt-[50px] p-5">
                     <p class="">
                       {frontmatter.problemSolve}
                     </p>
@@ -130,36 +90,39 @@ const items = [
             </div>
           </section>
 
-          <!-- *ABOUT TEMPLATE ^-->
-
-          <!-- TODO: PAGES INCLUDED TEMPLATE V-->
-
+          <!--* PAGES INCLUDED V-->
           <section
             id=""
-            class="bg-rosyBrown text-parchment border-t-2 border-b-2 border-black mt-5"
+            class="bg- text- border-t-2 border-b-2 border-black mt-5"
           >
-            <div id="grid" class="grid grid-cols-2">
+            <div id="primary-grid" class="grid 2xl:grid-cols-2 grid-cols-1">
               <div id="sq1" class="border-r-2 border-black bg- p-5">
-                <div id="flex" class="grid grid-cols-2">
-                  <div class="">
-                    <h3>included pages</h3>
-                    <ul id="included-pages">
-                      <li>{frontmatter.includedPageItem1}</li>
-                      <li>{frontmatter.includedPageItem2}</li>
-                      <li>{frontmatter.includedPageItem3}</li>
-                      <li>{frontmatter.includedPageItem4}</li>
+                <div id="sq-grid" class="grid grid-cols-1">
+                  <div class="text-right">
+                    <h3 class="text-2xl font-bold">
+                      {frontmatter.includedTitle}
+                    </h3>
+                    <ul id="included-pages" class="text-md pl-1">
+                      <li>- {frontmatter.includedPageItem1}</li>
+                      <li>- {frontmatter.includedPageItem2}</li>
+                      <li>- {frontmatter.includedPageItem3}</li>
+                      <li>- {frontmatter.includedPageItem4}</li>
+                      <li>- {frontmatter.includedPageItem5}</li>
+                      <li>- {frontmatter.includedPageItem6}</li>
+                      <li>- {frontmatter.includedPageItem7}</li>
+                      <li>- {frontmatter.includedPageItem8}</li>
                     </ul>
                   </div>
-
-                  <div class="">
-                    <h3>Bonus pages</h3>
+                  <!-- ?CB- UNSURE IF NEEDED --V -->
+                  <!-- <div id="bonus-content-container" class="pt-2">
+                    <h3 class="text-2xl font-bold">Bonus content</h3>
                     <ul id="bonus-pages">
                       <li>{frontmatter.bonusPageItem1}</li>
                       <li>{frontmatter.bonusPageItem2}</li>
                       <li>{frontmatter.bonusPageItem3}</li>
                       <li>{frontmatter.bonusPageItem4}</li>
                     </ul>
-                  </div>
+                  </div> -->
                 </div>
               </div>
               <div id="sq2" class="bg-carribean text-parchment p-">
@@ -167,51 +130,49 @@ const items = [
               </div>
             </div>
           </section>
-          <!-- TODO: PAGES INCLUDED TEMPLATE ^-->
 
+          <!--* NEW CTA v-->
+          <!-- testimonial, link to current business using template-HOVEYROOFING v-->
           <section id="/" class="py-5 mt-5">
             <div id="" class="2xl:pt-[120px] pt-[90px] pb-5 mb-5">
               <div class="grid 2xl:grid-cols-2 grid-cols-1">
                 <section class="2xl:px-5 px-1 flex items-center">
-                  <div class="w-full lg:pl-[70px] mt-5 px-5">
+                  <div class="bg- w-full lg:pl-[70px] mt-5 px-5">
                     <div class="py-1 mb-1">
-                      <!-- <h1 class="text-4xl text-center py-1 my-1 font-semibold"> -->
-                      <!-- New Cta -->
-                      <!-- </h1> -->
-                      <p class="text-lg pl-1 pt-1 font-semibold">
+                      <h3 class="text-lg text- pt-1 font-medium">
+                        client site
+                      </h3>
+                      <h4 class="font-bold text-2xl">
                         {frontmatter.newCtaTitle}
-                      </p>
+                      </h4>
                     </div>
-                    {
-                      /* <p class="pb-5">
-               Why should you prefer a custom-made
-                website, when you can simply use wix or wordpress? Because a
-                custom website fits your business, personality, goals... and you
-                alone.
-              </p> */
-                    }
-
-                    <ul class="md:text-lg text-md pt-1">
+                    <ul class="space-y-2 md:text-lg text-md pt-1">
                       <li>
                         <b>-</b>{frontmatter.newCtaListItem1}
                       </li>
                       <li>
-                        {frontmatter.newCtaListItem2}
+                        <b>-</b>{frontmatter.newCtaListItem2}
                       </li>
                       <li>
+                        <b>-</b>
                         {frontmatter.newCtaListItem3}
                       </li>
                       <li>
+                        <b>-</b>
                         {frontmatter.newCtaListItem4}
                       </li>
                     </ul>
 
                     <div class="p-1 mt-5 text-parchment text-lg">
+                      <!-- 1ST BTN- "SEE PACKAGE" -->
                       <button
-                        class="dropshadow-lg bg-test1 hover:text-white mr-1 px-2 py-1 dropshadow-md"
+                        class="dropshadow-lg bg-rosyBrown hover:text-white mr-1 px-2 py-1 dropshadow-md"
                       >
-                        <a href="/#about">About</a>
+                        <a href={frontmatter.clientSiteLink}>see client site</a>
                       </button>
+
+                      <!-- 2ND BTN- "CONTACT" -->
+
                       <button
                         class="dropshadow-lg bg-carribean hover:text-orange ml-1 px-2 py-1 dropshadow-md"
                       >
@@ -232,19 +193,35 @@ const items = [
             </div>
           </section>
 
-          <!-- TODO V -->
+          <!-- * CTA OTHER WEB TEMPLATE OPTIONS v-->
+          <section id="wrapper" class="bg- text-right py-5 my-5 pr-3">
+            <h4 class="font-semibold pb-1">More Template/ Kit Options</h4>
+            <ul class="">
+              <li>
+                <a href={frontmatter.otherPgLink1}>
+                  - {frontmatter.otherPgTitle1}
+                </a>
+              </li>
+              <li>
+                <a href={frontmatter.otherPgLink2}>
+                  - {frontmatter.otherPgTitle2}
+                </a>
+              </li>
+            </ul>
+          </section>
 
+          <!--* GALLERY V-->
           <div class="bg- pt-1 mt-5 bg-">
             <div
               id="gallery-grid"
-              class="mt-5 2xl grid md:grid-cols-4 grid-cols-2 gap-1 py-4"
+              class="mt-5 2xl grid 2xl:grid-cols-4 grid-cols-2 gap-1 py-4"
             >
               <div id="img-1" class="">
                 <a href="/">
                   <img
                     src={frontmatter.EndGalleryImg1}
                     alt=""
-                    class="w-full 2xl:h-[200px] h-[230px] border border-black"
+                    class="2xl:h-[200px] 2xl:w-full w-[230px] border border-black"
                   />
                 </a>
               </div>
@@ -254,7 +231,7 @@ const items = [
                   <img
                     src={frontmatter.EndGalleryImg2}
                     alt=""
-                    class="w-full 2xl:h-[200px] h-[230px] border border-black"
+                    class="2xl:h-[200px] 2xl:w-full w-[230px] border border-black"
                   />
                 </a>
               </div>
@@ -263,7 +240,7 @@ const items = [
                   <img
                     src={frontmatter.EndGalleryImg3}
                     alt=""
-                    class="w-full 2xl:h-[200px] h-[230px] border border-black"
+                    class="2xl:h-[200px] 2xl:w-full w-[230px] border border-black"
                   />
                 </a>
               </div>
@@ -273,30 +250,12 @@ const items = [
                   <img
                     src={frontmatter.EndGalleryImg4}
                     alt=""
-                    class="w-full 2xl:h-[200px] h-[230px] border border-black"
+                    class="2xl:h-[200px] 2xl:w-full w-[230px] border border-black"
                   />
                 </a>
               </div>
             </div>
           </div>
-
-          <!-- ! ^ -->
-          <!-- ADD HOW IT WORKS CTA? -->
-          <!--  ?:  REVIEWS V-->
-          <!-- 
-          <section id="reviews" class="bg-test1">
-            <h2>REVIEWS</h2>
-          </section> -->
-          <!--  ?:  REVIEWS V-->
-
-          <!--  ?:  HOW IT WORKS V-->
-
-          <!-- TODO:  HOW IT WORKS ^-->
-
-          <!-- <h2>FAQ</h2>
-
-          <h2>CTA</h2>
-          <h2>CONTACT</h2> -->
 
           <div class="mt-5 my-5 py-[55px] pt-2 opacity-80 text-lg">
             <div class="">

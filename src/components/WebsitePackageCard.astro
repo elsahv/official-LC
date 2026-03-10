@@ -1,9 +1,9 @@
 ---
 const frontmatter = Astro.props;
-const { no, image, alt, url } = frontmatter;
+const { no, image, alt, url, title } = frontmatter;
 ---
 
-<div id="CARD" class="bg- py-5 bg-">
+<div id="CARD" class="bg- py-5 opacity-80">
   <div class="bg- pt-1 pr-l">
     <h3 class="text-xl">{no}.</h3>
   </div>
@@ -13,10 +13,11 @@ const { no, image, alt, url } = frontmatter;
       <a href={url}>
         <img
           src={image}
-          class="opacity-60 hover:opacity-100 duration-500 mt-1 mr-5 p-1 rounded border bg-[#f9f9f9] border-rosyBrown hover:border-cerulean drop-shadow-xl hover:drop-shadow-3xl"
+          class="opacity-90 hover:opacity-100 duration-500 mt-1 mr-5 p-1 rounded border bg-[#f9f9f9] border-rosyBrown hover:border-cerulean drop-shadow-xl hover:drop-shadow-3xl"
           alt={alt}
         />
       </a>
+      <!-- <h3 class="">visit {title}</h3> -->
     </div>
   </div>
 </div>
