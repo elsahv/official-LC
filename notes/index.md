@@ -1,5 +1,11 @@
 <!-- *3/11/26: CREATE <Conditional /> in test folder, utilizing TEST PG -->
 
+start here
+how it works
+whats included
+about
+contact
+
 <!-- TODO: WEBSITE MARKDOWN has a first-gallery and 2nd-gallery.
 <!-- ? 1st gallery shows dynamic pkg? -->
 <!-- ? 2nd gallery shows other packages? -->

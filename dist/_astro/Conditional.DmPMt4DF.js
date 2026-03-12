@@ -1,0 +1,9 @@
+import{r as x}from"./index.BcVDQ18_.js";var d={exports:{}},n={};/**
+ * @license React
+ * react-jsx-runtime.production.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */var a=Symbol.for("react.transitional.element"),c=Symbol.for("react.fragment");function o(l,e,s){var r=null;if(s!==void 0&&(r=""+s),e.key!==void 0&&(r=""+e.key),"key"in e){s={};for(var i in e)i!=="key"&&(s[i]=e[i])}else s=e;return e=s.ref,{$$typeof:a,type:l,key:r,ref:e!==void 0?e:null,props:s}}n.Fragment=c;n.jsx=o;n.jsxs=o;d.exports=n;var t=d.exports;const j=()=>t.jsx("div",{children:"test1"}),u=()=>t.jsx("div",{children:"test2"}),v=()=>t.jsx("div",{children:"test3"}),h=()=>t.jsx("div",{children:"test4"}),b=()=>t.jsx("div",{children:"test5"});function f(){const[l,e]=x.useState("start"),s=[{id:"start",label:"start here",content:t.jsx(j,{})},{id:"how",label:"how it works",content:t.jsx(u,{})},{id:"included",label:"whats included",content:t.jsx(v,{})},{id:"about",label:"about",content:t.jsx(h,{})},{id:"contact",label:"contact",content:t.jsx(b,{})}];return t.jsxs("div",{className:"flex flex-col bg-test1",children:[t.jsx("div",{id:"logo",class:"text- 2xl:text-9xl lg:text-7xl text-6xl pb-1 opacity-90",children:t.jsxs("a",{href:"/",children:[" Laughing ",t.jsx("br",{})," Coyote"]})}),t.jsx("div",{className:"flex justify-left ",children:t.jsx("div",{id:"nav-items",className:"px-3 py-1 mt-3 bg- flex flex-col  border-t border-b border-black space-y-1 text-xl",children:s.map(r=>t.jsx("button",{className:`text-left hover:opacity-70 ${l===r.id?"font-bold":""}`,onClick:()=>e(r.id),children:r.label},r.id))})}),t.jsx("div",{className:"bg- min-h-[120px]",children:s.find(r=>r.id===l)?.content})]})}export{f as default};

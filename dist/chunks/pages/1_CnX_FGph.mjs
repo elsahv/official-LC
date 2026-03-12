@@ -1,0 +1,41 @@
+/* empty css                          */
+import { a as createComponent, d as renderComponent, r as renderTemplate, u as unescapeHTML } from '../astro_DjjsqpOI.mjs';
+import 'kleur/colors';
+import 'clsx';
+import { $ as $$WebsitePackageMarkdown } from './08_CSclgwKh.mjs';
+
+const html = "";
+
+				const frontmatter = {"no":"01","layout":"../../layouts/WebsitePackageMarkdown.astro","testItem1":"This is the The Growing Pup kit. Brochure hands off site w/ monthly updates.","image":{"url":"https://dl.dropboxusercontent.com/scl/fi/ofaszetg60epvok8kpdh0/rq-1-11-23.png?rlkey=8t41ceft4umwmot1nzdt3mnj7&st=mmux5w3p&dl=0","alt":"PHP & wordpress theme projec``ts"},"secondImage":{"url":"https://dl.dropboxusercontent.com/scl/fi/ofaszetg60epvok8kpdh0/rq-1-11-23.png?rlkey=8t41ceft4umwmot1nzdt3mnj7&st=mmux5w3p&dl=0","alt":"PHP & wordpress theme projects"},"title":"The Growing Pup","paragraph":"For clients in 'beginner stages'. Perfect for new businesses that need a fast one-page website to start attracting customers.","aboutTemplate":"Best for: freelancers, new businesses, or a quick launch.","offers":"offers:a single pg template, 5 sections: not a experiment. It’s a trust machine. no frills.","problemSolve":"how does this template solve problem?","solveListItem1":"how to design a website","solveListItem2":"**Best for:** freelancers, new businesses, events, landing pages.","aboutImage":{"url":"https://images.pexels.com/photos/35572940/pexels-photo-35572940.jpeg?_gl=1*1jg1wwm*_ga*MTA5MDE3MzI2MS4xNzU4MjUwMDM4*_ga_8JE65Q40S6*czE3NzAyMzUzNTckbzI3JGcxJHQxNzcwMjM1NDAyJGoxNSRsMCRoMA..","alt":"PHP & wordpress theme projects"},"includedTitle":"INCLUDES:","includedPageItem1":"1-page scrolling website","includedPageItem2":"4–6 sections (hero, about, services, contact, etc.)","includedPageItem3":"Mobile responsive design","includedPageItem4":"Contact formc","includedPageItem5":"Basic SEO setup","includedPageItem6":"Social media links","includedPageItem7":"Performance optimized","includedPageItem8":"1 revision round","bonusPageItem1":"1 test","bonusPageItem2":"2 test","bonusPageItem3":"3 test","bonusPageItem4":"4 test","imgForPagesOffered":"https://images.pexels.com/photos/326514/pexels-photo-326514.jpeg?_gl=1*1t1jfmh*_ga*MTA5MDE3MzI2MS4xNzU4MjUwMDM4*_ga_8JE65Q40S6*czE3NzI3NTQ2ODkkbzM2JGcxJHQxNzcyNzU0NzAzJGo0NiRsMCRoMA..","newCtaTitle":"HOVEY ROOFING","newCtaListItem1":" Increased potential customers, easier to find on Google","newCtaListItem2":" The ablity to tell your story and brand","newCtaListItem3":"Peace of mind... for business owners who do not have time to build with software","newCtaListItem4":"A custom website that fits your business, personality, goals...and you alone.","clientSiteLink":"https://hoveyroofing.com","newCTAImg":"https://images.pexels.com/photos/32907278/pexels-photo-32907278.jpeg?_gl=1*63lshe*_ga*MTA5MDE3MzI2MS4xNzU4MjUwMDM4*_ga_8JE65Q40S6*czE3NzAyMzUzNTckbzI3JGcxJHQxNzcwMjM1NDAyJGoxNSRsMCRoMA..","otherPgTitle1":" The Rising Carnivore","otherPgTitle2":"The Alpha","otherPgLink1":"/websitePackages/2.the-rising-carnivore","otherPgLink2":"/websitePackages/3.the-alpha","EndGalleryImg1":"https://dl.dropboxusercontent.com/scl/fi/jtfnbqyqk5ly03x5kspuz/wtbh-3-26-24.png?rlkey=0igc90thtm07w1i9cardfeu3h&st=7m58a2i4&dl=0","EndGalleryImg2":"https://dl.dropboxusercontent.com/scl/fi/https://www.dropbox.com/scl/fi/r2memu9vr71tw03oe57kz/IMG_0300.jpg?rlkey=k9upvwvx4vudmyv88f8srhxlu&st=9jqc6rlj&dl=0","EndGalleryImg3":"https://dl.dropboxusercontent.com/scl/fi/oraxtrdwq2apy6x4f87xj/fish-screenshot.jpg?rlkey=8woeczr9d8n7gqpqfbbnayb9e&st=bv1bc7kp&dl=0","EndGalleryImg4":"https://dl.dropboxusercontent.com/scl/fi/7a3l8ubz95eom7np54z39/2-23-25.png?rlkey=l0v1smbmzd7vqdpyt7mh708xh&st=vzxtp941&dl=0"};
+				const file = "/home/elsahv/Desktop/official-LC/src/pages/websitePackages/1.the-growing-pup.md";
+				const url = "/websitePackages/1.the-growing-pup";
+				function rawContent() {
+					return "";
+				}
+				function compiledContent() {
+					return html;
+				}
+				function getHeadings() {
+					return [];
+				}
+
+				const Content = createComponent((result, _props, slots) => {
+					const { layout, ...content } = frontmatter;
+					content.file = file;
+					content.url = url;
+
+					return renderTemplate`${renderComponent(result, 'Layout', $$WebsitePackageMarkdown, {
+								file,
+								url,
+								content,
+								frontmatter: content,
+								headings: getHeadings(),
+								rawContent,
+								compiledContent,
+								'server:root': true,
+							}, {
+								'default': () => renderTemplate`${unescapeHTML(html)}`
+							})}`;
+				});
+
+export { Content, compiledContent, Content as default, file, frontmatter, getHeadings, rawContent, url };
