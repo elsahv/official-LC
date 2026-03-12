@@ -6,6 +6,7 @@ import Footer from "../components/Footer.astro";
 import TableContents from "../components/sections/TableContents.astro";
 import TechApplicationCard from "../components/TechApplicationCard.astro";
 import WebsitePackageCard from "../components/WebsitePackageCard.astro";
+// import Hero from "../components/sections/Hero.astro";
 const techApplications = await Astro.glob("./techApplications/*.md");
 const websitePackages = await Astro.glob("./websitePackages/*.md");
 ---
@@ -20,28 +21,7 @@ const websitePackages = await Astro.glob("./websitePackages/*.md");
       <div id="right-panel-wrapper" class="border-l-2 border border-gray-500">
         <div id="right-panel-container" class="bg rounded-bl mr-2 md:p-5">
           <div id="" class="p-5">
-            <div id="intro-section" class="p-5 opacity-65 mt-[75px]w-3/4">
-              <div id="right-panel-HERO" class="pb-2 mt-5">
-                <!-- KEEP HEADLINE, I REALLY LIKE THIS V -->
-                <h1 id="ADDRESS-KEY-PROBLEM" class="text-4xl">
-                  Web Design Inspired Kits created using Southern California
-                  Aesthetics
-                </h1>
-                <!-- KEEP HEADLINE, I REALLY LIKE THIS ^   -->
-                <p id="ADDRESS-KEY-PROBLEM">
-                  websites inspired by desert colors, and palm springs modernism
-                  styles... from someone who's lived the desert life for a near
-                  decade! explore website packages... v. This is the cta for
-                  exploring <a href="/websitePackages/1.the-growing-pup"
-                    >the growing pup</a
-                  >, <a href="/websitePackages/2.the-rising-carnivore"
-                    >the rising carnivore</a
-                  >, and <a href="/websitePackages/3.the-alpha">the alpha</a>.
-                </p>
-              </div>
-            </div>
-
-            <!-- WHAT ALL BUILDS OFFER: about, services, contact, what every small business needs in  a site vvvv -->
+            <!-- <Hero /> -->
             <div
               id="BUILD-AUTHORITY-case-studies-grid"
               class="bg- ml-5 mr-[50px] px-5 grid 2xl:grid-cols-2 gap-5 my- bg-"

@@ -18,7 +18,54 @@ const { frontmatter } = Astro.props;
     >
       <section class="">
         <div id="website-content" class="pl- dropshadow-3xl mt-3">
-          <!-- *TITLE BANNER V-->
+          <!--* 1st GALLERY V-->
+          <!-- ?what if these gallery imgs lead to other website package cta?? v-->
+          <div id="1st-gallery" class="bg- pt-1 mt-5 bg-">
+            <div
+              id="gallery-grid"
+              class="mt-5 2xl grid 2xl:grid-cols-4 grid-cols-2 gap-1 py-4"
+            >
+              <div id="img-1" class="">
+                <a href="/">
+                  <img
+                    src={frontmatter.EndGalleryImg1}
+                    alt=""
+                    class="2xl:h-[200px] 2xl:w-full w-[230px] border border-black"
+                  />
+                </a>
+              </div>
+
+              <div id="img-2" class="">
+                <a href="/">
+                  <img
+                    src={frontmatter.EndGalleryImg2}
+                    alt=""
+                    class="2xl:h-[200px] 2xl:w-full w-[230px] border border-black"
+                  />
+                </a>
+              </div>
+              <div id="img-3" class="">
+                <a href="/">
+                  <img
+                    src={frontmatter.EndGalleryImg3}
+                    alt=""
+                    class="2xl:h-[200px] 2xl:w-full w-[230px] border border-black"
+                  />
+                </a>
+              </div>
+
+              <div id="img-4" class="">
+                <a href="/">
+                  <img
+                    src={frontmatter.EndGalleryImg4}
+                    alt=""
+                    class="2xl:h-[200px] 2xl:w-full w-[230px] border border-black"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- ?what if these gallery imgs lead to other website package cta?? ^-->
 
           <!-- TODO: AIDA --V -->
           <div
@@ -218,8 +265,13 @@ const { frontmatter } = Astro.props;
               Pro:	custom multi-page
               That framing sells much better. -->
           <section id="wrapper" class="bg- text-right py-5 my-5 pr-3">
-            <h4 class="font-semibold pb-1">More Template/ Kit Options</h4>
-            <!-- MOVE THESE CTA TOWARDS LEFT PANEL HOW IT WORKS V -->
+            <h4 class="font-semibold pb-1">
+              Explore other Template/ Kit Options...
+            </h4>
+            <p>
+              Enjoyed reading this case study? Check some other interesting
+              template:
+            </p>
             <ul class="">
               <li>
                 <a href={frontmatter.otherPgLink1}>
@@ -232,21 +284,19 @@ const { frontmatter } = Astro.props;
                 </a>
               </li>
             </ul>
-            <!-- MOVE THESE CTA TOWARDS LEFT PANEL HOW IT WORKS ^ -->
           </section>
 
-          <!--* GALLERY V-->
-          <div class="bg- pt-1 mt-5 bg-">
+          <div id="2nd-gallery" class="bg-test1 pt-1 mt-5 bg-">
             <div
               id="gallery-grid"
-              class="mt-5 2xl grid 2xl:grid-cols-4 grid-cols-2 gap-1 py-4"
+              class="mt-5 2xl grid 2xl:grid-cols-3 grid-cols-2 gap-1 py-4"
             >
               <div id="img-1" class="">
                 <a href="/">
                   <img
                     src={frontmatter.EndGalleryImg1}
                     alt=""
-                    class="2xl:h-[200px] 2xl:w-full w-[230px] border border-black"
+                    class="2xl:h-[250px] 2xl:w-full w-[230px] border border-black"
                   />
                 </a>
               </div>
@@ -256,7 +306,7 @@ const { frontmatter } = Astro.props;
                   <img
                     src={frontmatter.EndGalleryImg2}
                     alt=""
-                    class="2xl:h-[200px] 2xl:w-full w-[230px] border border-black"
+                    class="2xl:h-[250px] 2xl:w-full w-[230px] border border-black"
                   />
                 </a>
               </div>
@@ -265,11 +315,11 @@ const { frontmatter } = Astro.props;
                   <img
                     src={frontmatter.EndGalleryImg3}
                     alt=""
-                    class="2xl:h-[200px] 2xl:w-full w-[230px] border border-black"
+                    class="2xl:h-[250px] 2xl:w-full w-[230px] border border-black"
                   />
                 </a>
               </div>
-
+              <!-- 
               <div id="img-4" class="">
                 <a href="/">
                   <img
@@ -278,10 +328,9 @@ const { frontmatter } = Astro.props;
                     class="2xl:h-[200px] 2xl:w-full w-[230px] border border-black"
                   />
                 </a>
-              </div>
+              </div> -->
             </div>
           </div>
-
           <div class="mt-5 my-5 py-[55px] pt-2 opacity-80 text-lg">
             <div class="">
               <slot />

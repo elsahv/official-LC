@@ -4,6 +4,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import WhatsLC from "../components/sections/WhatsLC.astro";
 import AccordianSection from "../components/testComponents/AccordianSection.astro";
+import Conditional from "../components/tests/Conditional.jsx";
 ---
 
 <div
@@ -14,12 +15,13 @@ import AccordianSection from "../components/testComponents/AccordianSection.astr
     id="LEFT-PANEL-container"
     class="bg- py-5 2xl:pl-5 2xl:pr-[30px] pl-1 pr-5 bg- border-r-2 border-black"
   >
-    <Header />
+    <!-- TODO: 3/11/26- COMPLETE NEW CONDITIONAL HEADER V-->
+    <Conditional client:load />
+    <!-- <Header /> -->
     <div id="" class="">
       <WhatsLC />
       <AccordianSection />
-      <!-- ? v-->
-      <!-- PACKAGES- _3/11/26-figure out how to display all in cta? combine w pricing?_ -->
+
       <!-- PRICING- _3/11/26-_ -->
       <!-- FAQ- _3/11/26-_ -->
       <!-- CONTACT- -->
