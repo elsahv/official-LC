@@ -1,4 +1,6 @@
 ---
+import LeftPanel from "../components/LeftPanel.astro";
+import RightPanelLayout from "../layouts/RightPanelLayout.astro";
 import "../styles/global.css";
 ---
 
@@ -26,9 +28,12 @@ import "../styles/global.css";
     />
   </head>
 
-  <body class="text-">
-    <div id="slot-container" class="bg- flex md:flex-row flex-col">
-      <slot />
-    </div>
+  <body>
+    <LeftPanel />
+    <RightPanelLayout>
+      <main>
+        <slot />
+      </main>
+    </RightPanelLayout>
   </body>
 </html>

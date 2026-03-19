@@ -1,52 +1,43 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Contact from "../components/sections/Contact.astro";
-import LeftPanel from "../layouts/LeftPanel.astro";
 import Footer from "../components/Footer.astro";
 import TableContents from "../components/sections/TableContents.astro";
-import TechApplicationCard from "../components/TechApplicationCard.astro";
+// import TechApplicationCard from "../components/TechApplicationCard.astro";
 import WebsitePackageCard from "../components/WebsitePackageCard.astro";
-// import Hero from "../components/sections/Hero.astro";
-const techApplications = await Astro.glob("./techApplications/*.md");
+import Hero from "../components/sections/Hero.astro";
+// const techApplications = await Astro.glob("./techApplications/*.md");
 const websitePackages = await Astro.glob("./websitePackages/*.md");
 ---
 
 <MainLayout>
-  <div id="homepage-wrapper" class="">
-    <LeftPanel />
-    <div
-      id="RIGHT-PANEL"
-      class="bg-parchment text-carribean medium 2xl:h-screen h-full md:absolute relative right-0 md:w-3/5 w-full md:overflow-y-scroll overflow-x-hidden"
-    >
-      <div id="right-panel-wrapper" class="border-l-2 border border-gray-500">
-        <div id="right-panel-container" class="bg rounded-bl mr-2 md:p-5">
-          <div id="" class="p-5">
-            <!-- <Hero /> -->
-            <div
-              id="BUILD-AUTHORITY-case-studies-grid"
-              class="bg- ml-5 mr-[50px] px-5 grid 2xl:grid-cols-2 gap-5 my- bg-"
-            >
-              <!-- PORTFIOLIO/ PACKAGES -->
-              <!-- SMOOTH TRANSITION BETWEEN KITS, PUP TO CARNIVORE, TO ALPHA  -->
-              {
-                websitePackages.map((caseStudy) => (
-                  <WebsitePackageCard
-                    no={caseStudy.frontmatter.no}
-                    title={caseStudy.frontmatter.title}
-                    image={caseStudy.frontmatter.image.url}
-                    alt={caseStudy.frontmatter.image.alt}
-                    url={caseStudy.url}
-                    testItem1={caseStudy.frontmatter.testItem1}
-                    language={caseStudy.frontmatter.language}
-                    backend={caseStudy.frontmatter.backend}
-                  />
-                ))
-              }
-            </div>
-            <!-- WHAT ALL BUILDS ALSO CAN OFFER, ELABORATE ON THINGS vvvv -->
-            <TableContents />
-          </div>
-          <div id="expand-on-my-websites-wrapper" class="bg- pb-5 px-5 mx-5">
+  <Hero
+    title="Start Here"
+    paragraph="Web Design Inspired by Southern California Aesthetics. websites inspired by desert colors, and palm springs modernism styles... from someone who's lived the desert life for a near decade! explore website packages... v"
+  />
+  <div
+    id="BUILD-AUTHORITY-case-studies-grid"
+    class="bg- ml-5 mr-[50px] px-5 grid 2xl:grid-cols-2 gap-5 my- bg-"
+  >
+    {
+      websitePackages.map((caseStudy) => (
+        <WebsitePackageCard
+          no={caseStudy.frontmatter.no}
+          title={caseStudy.frontmatter.title}
+          image={caseStudy.frontmatter.image.url}
+          alt={caseStudy.frontmatter.image.alt}
+          url={caseStudy.url}
+          testItem1={caseStudy.frontmatter.testItem1}
+          language={caseStudy.frontmatter.language}
+          backend={caseStudy.frontmatter.backend}
+        />
+      ))
+    }
+  </div>
+  <!-- WHAT ALL BUILDS ALSO CAN OFFER, ELABORATE ON THINGS vvvv -->
+  <TableContents />
+  <!-- </div> -->
+  <!-- <div id="expand-on-my-websites-wrapper" class="bg- pb-5 px-5 mx-5">
             <div
               id="expand-on-my-websites-card"
               class="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-x-1 pl-2 pb-5"
@@ -65,11 +56,8 @@ const websitePackages = await Astro.glob("./websitePackages/*.md");
                 ))
               }
             </div>
-          </div>
-        </div>
-        <Contact />
-        <Footer />
-      </div>
-    </div>
-  </div>
+          </div> -->
+  <!-- </div> -->
+  <Contact />
+  <Footer />
 </MainLayout>

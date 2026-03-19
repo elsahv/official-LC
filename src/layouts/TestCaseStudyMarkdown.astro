@@ -1,6 +1,5 @@
 ---
 import Footer from "../components/Footer.astro";
-import LeftPanel from "../layouts/LeftPanel.astro";
 import BackBtn from "../components/BackBtn.astro";
 import MainLayout from "./MainLayout.astro";
 const { frontmatter } = Astro.props;
@@ -8,9 +7,6 @@ const { frontmatter } = Astro.props;
 
 <!-- !NOTE: THIS WAS ORIGINALLY WEBSITE PACKAGE MD, WE ARE NOW USING IT FOR CASE STUDY MD -->
 <MainLayout>
-  <div class="bg-test1">
-    <LeftPanel />
-  </div>
   <div id="markdown-post" class="text-lg">
     <div
       id="right-side-markdown-container"

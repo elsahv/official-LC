@@ -1,16 +1,27 @@
-<!-- *3/11/26: CREATE <Conditional /> in test folder, utilizing TEST PG -->
-
-start here
-how it works
-whats included
-about
-contact
-
+<!-- TODO: FOR 3/19/26---- LC- MOVE LEFT PANEL COMPS to the correct right panel sections-  per PGSv -->
+<!-- ? <WhatsLC /> -->
+<!-- TODO: <AccordianSection /> PUT UNDER WHATS INCLUDED PG-->
+<!-- ! Pricing PUT UNDER ABOUT PG?? SELLING REASONS TO GO FOR CERTAIN PKGS??-->
+<!-- ! faq -->
+<!-- ! contact-->
+<!-- ! <Overview /> -->TURN INTO contact cta-->
+<!-- TODO: FOR 3/19/26  ^^^^^^^^^^^^^^^^^ -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
 <!-- TODO: WEBSITE MARKDOWN has a first-gallery and 2nd-gallery.
 <!-- ? 1st gallery shows dynamic pkg? -->
 <!-- ? 2nd gallery shows other packages? -->
 <!--  -->
-<!-- TODO: KEEP THIS STANDARD!---V  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!-- !: KEEP THIS STANDARD!---V  -->
 
 **_---GUIDELINE FOR INDEX and package md!--v_**
 HERO-

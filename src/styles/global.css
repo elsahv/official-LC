@@ -102,10 +102,11 @@ p {
  
 
 
- .sq-styles #sq {
+ .sq-styles {
   border: 1px solid black;
   border-radius: 15px;
-  background: #f0ead2; 
+  background: teal;
+  color: #f0ead2; 
 }
  
  
